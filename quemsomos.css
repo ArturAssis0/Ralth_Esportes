@@ -1,0 +1,135 @@
+html, body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #fff;
+    font-family: 'Montserrat';
+}
+
+/* TOPO */
+
+#opcoes {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 100%;
+    height: 8vh;
+    max-width: 100vw;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+}
+
+#meio_topo {
+    background-color: rgb(4, 82, 145);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 8vh;
+}
+
+#logo 
+{
+    
+    margin-left: 2%;
+    background-image: url(img/escudo_ralth_site.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-color: rgb(4, 82, 145);
+    
+}
+
+#menu {
+    margin-left: 5%;
+    background-image: url(img/img_menu.png);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(4, 82, 145);
+    cursor: pointer;
+}
+
+#src {
+    background-image: url(img/lupa-removebg-preview.png);
+    background-color: rgb(4, 82, 145);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+
+/* MENU OPÇÕES */
+
+#menu_opcoes {
+    font-size: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0 10px;
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    width: 100vw;
+    margin-top: 5%;
+    box-sizing: border-box;
+    text-align: center;
+    max-height: 0;
+    opacity: 0;
+    border-radius: 0 0 8px 8px;
+    z-index: 20;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+#menu_opcoes.mostrar {
+    max-height: 60vh;
+    opacity: 1;
+    padding: 10px;
+}
+
+#menu_opcoes a {
+    padding: 10px;
+    width: 98%;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #aaa;
+    transition: 0.3s;
+}
+
+#menu_opcoes a:hover {
+    background-color: #ddd;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+#conteudo {
+    width: 90%;
+    max-width: 800px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+#conteudo h1 {
+    color: rgb(4, 82, 145);
+    font-size: 32px;
+}
+
+#conteudo p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.opc
+{
+    background-color: white;
+    width: 25%;
+    height:100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
