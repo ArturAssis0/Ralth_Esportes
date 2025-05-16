@@ -1,0 +1,283 @@
+html, body
+{
+    margin: 0vw 0vh;
+    font-family: 'Montserrat';
+    background-color: transparent;
+}
+
+#main_div
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+#opcoes
+{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 100%;
+    height: 8vh;
+    max-width: 100vw;
+    text-align: center;
+    display: flex;
+    background-color: transparent;
+
+}
+
+#meio_topo
+{
+    background-color: rgb(4, 82, 145);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:right;
+    align-items: center;
+    width: 100vw;
+    height: 9vh;
+}
+
+#menu_opcoes {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 32vw;
+    text-align: center;
+    transition: all 0.5s ease-out;
+    transition: all 0.5s ease-in;
+    box-sizing: border-box;
+    max-height: 0; 
+    opacity: 0; 
+    border:  solid 1px rgb(216, 216, 216);
+    margin-top: 12%;
+    margin-bottom: 5%;
+    z-index: 30;
+
+}
+
+#menu_opcoes.mostrar {
+
+    max-height: 60vh;
+    opacity: 1;
+    padding: 10px;
+    transition: all 0.5s ease-in;
+    transition: all 0.5s ease-out;
+}
+
+
+
+
+#menu_opcoes a {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: white;
+    padding: 8px;
+    width: 102%;
+    text-align: center;
+    margin: 5px 0;
+    transition: 0.5s;
+}
+
+#menu_opcoes a:hover {
+    background-color: #ddd;
+}
+
+#logo
+{
+    margin-right: 5%;
+    margin-top: 8%;
+    height: 22vh;
+    background-image: url(img/escudo_ralth_site.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;
+    z-index: 25;
+}
+
+
+#menu
+{
+    background-image: url(img/img_menu.png);
+    background-size: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* CARROSSEL */
+
+.carrossel
+{
+
+    width: 100%;
+    max-width: 100vw;
+    height: 30vh;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+  
+  .conteudo
+{
+    display: flex;
+}
+  
+.item 
+{
+    
+    width: 100%;
+    height: 30vh;
+    flex-shrink: 0;
+    background-position: center;
+}
+  
+.img1 
+{ 
+    background-image: url(img/carrossel_1.jpg); 
+    background-size:cover;
+    background-position: center;
+}
+
+.img2 
+{ 
+    background-image: url(img/carrossel_2.jpg); 
+    background-size: cover;
+    background-position: center;
+}
+
+.img3 
+{ 
+    background-image: url(img/carrossel_3.jpg); 
+    background-size: cover;
+    background-position: center;
+}
+
+.img4 
+{ 
+    background-image: url(img/carrossel_4.jpg); 
+    background-size: cover;
+    background-position: center;
+}
+  
+.anterior, .proximo 
+{
+    color: white;
+}
+
+/* CONTEUDO */
+
+#conteudo
+{
+    width: 90%;
+    padding: 5px;
+    
+}
+
+#conteudo h1
+{
+    text-align: left;
+}
+
+/* RODAPE */
+
+#rodape
+{
+    background-color: rgb(4, 82, 145);
+    margin-top: 10%;
+    font-size: 15px;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#complemento1
+{
+    margin-left: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#complemento
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#insta
+{
+    width: 15%;
+    height: 5vh;
+    background-image: url(img/logo_instagram.png);
+    background-size: 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 2%;
+}
+
+#wzp
+{
+    width: 15%;
+    height: 5vh;
+    background-image: url(img/img_wzp.png);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 3%;
+    margin-left: 2%;
+}
+
+.link_rs
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.opc_menu
+{
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+    padding: 10px;
+    width: 95vw;
+    
+}
+
+.opc
+{
+    background-color: white;
+    width: 25%;
+    height:100%;
+    padding: 10px;
+}
+
+p
+{
+    text-indent: 30px;
+    text-align: justify;
+}
+
+h5
+{
+    text-align: center;
+}
+

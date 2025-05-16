@@ -1,0 +1,35 @@
+    <section>
+        <div id="escolas">
+            <div id="item_1" class="iten_escola">
+                
+            </div>
+            <div id="item_2" class="iten_escola">
+                
+            </div>
+            <div id="item_3" class="iten_escola">
+                
+            </div>
+            <div id="item_4" class="iten_escola">
+                          
+            </div>
+            <div id="item_5" class="iten_escola">
+                
+            </div>
+            <div id="item_6" class="iten_escola">
+                              
+            </div>
+        </div>
+    </section>
+
+
+    #escolas
+{
+    margin-top: 8%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+<base href="https://arturassis0.github.io/teste4/" target="_self">
