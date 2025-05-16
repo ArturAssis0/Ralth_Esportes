@@ -28,7 +28,7 @@ html, body {
     justify-content:right;
     align-items: center;
     width: 100vw;
-    height: 9vh;
+    height: 6vh;
 }
 
 #menu_opcoes {
@@ -91,7 +91,7 @@ html, body {
     background-image: url(../img/escudo_ralth_site.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 90%;
     background-color: transparent;
     z-index: 25;
 }
