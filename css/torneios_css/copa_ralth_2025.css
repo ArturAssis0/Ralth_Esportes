@@ -88,7 +88,7 @@ html, body {
     margin-right: 5%;
     margin-top: 8%;
     height: 22vh;
-    background-image: url(../../../img/escudo_ralth_site.png);
+    background-image: url(../img/escudo_ralth_site.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 90%;
@@ -99,7 +99,7 @@ html, body {
 
 #menu
 {
-    background-image: url(../../../img/img_menu.png);
+    background-image: url(../img/img_menu.png);
     background-size: 35%;
     background-position: center;
     background-repeat: no-repeat;
@@ -160,7 +160,7 @@ html, body {
 {
     width: 15%;
     height: 5vh;
-    background-image: url(../../../img/logo_instagram.png);
+    background-image: url(../img/logo_instagram.png);
     background-size: 200%;
     background-position: center;
     background-repeat: no-repeat;
@@ -171,7 +171,7 @@ html, body {
 {
     width: 15%;
     height: 5vh;
-    background-image: url(../../../img/img_wzp.png);
+    background-image: url(../img/img_wzp.png);
     background-size: 90%;
     background-position: center;
     background-repeat: no-repeat;
@@ -241,7 +241,7 @@ html, body {
     margin-top: 5%;
     width: 45vw;
     height: 20vh;
-    background-image: url(../../img/img_volei.jpg);
+    background-image: url(../img/img_volei.jpg);
     background-position: center;
     background-size: cover;
     
