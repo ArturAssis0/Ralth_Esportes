@@ -86,7 +86,7 @@ html, body {
 #logo
 {
     margin-right: 5%;
-    margin-top: 8%;
+    margin-top: 3%;
     height: 22vh;
     background-image: url(../img/escudo_ralth_site.png);
     background-position: center;
@@ -186,3 +186,72 @@ html, body {
 }
 
 /* TERMINO DAS FORMATAÇOES FIXAS */
+
+#escolas
+{
+    margin-top: 8vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+#item_1
+{
+    background-image: url(../img/logo_ccv.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#item_2
+{
+    background-image: url(../img/logo_supremo.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#item_3
+{
+    background-image: url(../img/logo_elizabeth.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#item_4
+{
+    background-image: url(../img/logo_ihf.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#item_5
+{
+    background-image: url(../img/img_volei.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#item_6
+{
+    background-image: url(../img/logo_construir.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.iten_escola
+{
+    width: 12%;
+    height: 8vh;
+    text-align: center;
+    padding: 40px;
+    margin: 0.5%;
+}

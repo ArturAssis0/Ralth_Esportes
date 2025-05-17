@@ -95,7 +95,7 @@ html, body
 #logo
 {
     margin-right: 5%;
-    margin-top: 8%;
+    margin-top: 3%;
     height: 22vh;
     background-image: url(img/escudo_ralth_site.png);
     background-position: center;
@@ -247,6 +247,8 @@ html, body
     margin-left: 2%;
 }
 
+/*outras coisas*/
+
 .link_rs
 {
     text-decoration: none;
@@ -272,12 +274,22 @@ html, body
 
 p
 {
+    font-weight: bolder;
     text-indent: 30px;
     text-align: justify;
+    color: rgb(0, 0, 128);
 }
 
 h5
 {
+    font-weight: bolder;
+    font-size: 16px;
+    color: rgb(0, 0, 128);
     text-align: center;
+}
+
+h1
+{
+    color: rgb(0, 0, 128);
 }
 
