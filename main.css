@@ -26,6 +26,7 @@ html, body
     text-align: center;
     display: flex;
     background-color: transparent;
+    z-index: 30;
 
 }
 
@@ -61,7 +62,7 @@ html, body
     border:  solid 1px rgb(216, 216, 216);
     margin-top: 5.5%;
     margin-bottom: 5%;
-    z-index: 30;
+    z-index: 25;
 
 }
 
@@ -102,7 +103,7 @@ html, body
     background-repeat: no-repeat;
     background-size: 90%;
     background-color: transparent;
-    z-index: 25;
+    z-index: 35;
 }
 
 
