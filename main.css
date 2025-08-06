@@ -294,9 +294,10 @@ h1
     color: rgb(0, 0, 128);
 }
 
-/* Mobile (até 767px) */
+/*formatação para tablets*/
 
-@media (min-width: 600px) and (max-width: 899px) {
+@media (min-width: 600px) and (max-width: 899px) 
+{
     html, body {
         margin: 0;
         font-family: 'Montserrat';
@@ -548,6 +549,8 @@ h1
     }
 }
 
+/*formatação para desktops*/
+
 @media (min-width: 900px) {
     html, body {
         margin: 2vh 0;
@@ -586,7 +589,7 @@ h1
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        height: 10vh;
+        height: 8vh;
         padding: 0 5%;
     }
 
@@ -613,7 +616,7 @@ h1
         color: white;
         transition: 0.3s;
         border-radius: 5px;
-        margin: 5% 10px;
+        margin: 2% 10px;
     }
 
     #menu
@@ -628,7 +631,7 @@ h1
     #logo {
         height: 35vh;
         background-size: 50%;
-        margin: 2% auto;
+        margin: 2% 35%;
     }
 
 
