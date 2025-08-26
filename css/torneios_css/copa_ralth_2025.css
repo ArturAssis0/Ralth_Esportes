@@ -246,3 +246,110 @@ html, body {
     background-size: cover;
     
 }
+
+
+        .tabela-classificacao {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: 'Montserrat', sans-serif;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .tabela-classificacao th {
+            background-color: #2c3e50;
+            color: white;
+            padding: 12px 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .tabela-classificacao td {
+            padding: 10px 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .tabela-classificacao tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .tabela-classificacao tr:hover {
+            background-color: #e9ecef;
+        }
+        
+        .tabela-classificacao tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .posicao {
+            font-weight: bold;
+            text-align: center;
+            width: 50px;
+        }
+        
+        .pontos, .jogos, .vitorias, .empates, .derrotas {
+            text-align: center;
+            width: 60px;
+        }
+        
+        .equipe {
+            font-weight: 500;
+        }
+        
+        .tabela-container {
+            overflow-x: auto;
+        }
+        
+        .tabela-titulo {
+            font-size: 1.5rem;
+            margin: 25px 0 15px 0;
+            color: #2c3e50;
+            font-weight: 600;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3498db;
+            display: inline-block;
+        }
+        
+        /* Media Queries para responsividade */
+        @media (max-width: 768px) {
+            .tabela-classificacao {
+                font-size: 0.85rem;
+            }
+            
+            .tabela-classificacao th, 
+            .tabela-classificacao td {
+                padding: 8px 10px;
+            }
+            
+            .tabela-titulo {
+                font-size: 1.3rem;
+            }
+            
+            .pontos, .jogos, .vitorias, .empates, .derrotas {
+                width: 50px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .tabela-classificacao {
+                font-size: 0.75rem;
+            }
+            
+            .tabela-classificacao th, 
+            .tabela-classificacao td {
+                padding: 6px 8px;
+            }
+            
+            .tabela-titulo {
+                font-size: 1.1rem;
+            }
+            
+            .equipe {
+                max-width: 120px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
