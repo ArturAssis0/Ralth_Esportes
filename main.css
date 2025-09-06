@@ -1,3 +1,4 @@
+
 html, body
 {
     margin: 0vw 0vh;
@@ -559,6 +560,8 @@ h1
     }
 
     #main_div {
+        width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -568,102 +571,134 @@ h1
 
     #opcoes {
         margin-top: 2%;
-        margin-bottom: 3%;
-        height: 15vh;
+        margin-bottom: 2%;
+        width: 80%;
+        height: 8vh;
         text-align: center;
         display: flex;
-        justify-content: center;
-        align-items: center;
         background-color: transparent;
         z-index: 30;
+        justify-content: space-between;
     }
 
     #meio_topo {
         background-color: rgb(4, 82, 145);
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        height: 8vh;
-        padding: 0 5%;
+        width: 100%;
+        height: 10vh;
+        padding: 0 10%;
+        margin-top: 2vh;
     }
 
     #menu_opcoes {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
+        justify-content: space-between;
+        background-color: rgb(4, 82, 145);
         position: static;
         width: auto;
         max-height: none;
         opacity: 1;
-        border: none;
-        margin: 0;
+        border-radius: 5px;
+        margin-top: 10vh;
         padding: 0;
     }
 
     #menu_opcoes a {
         font-size: 25px;
         font-weight: bold;
-        background-color: rgb(4, 82, 145);
-        padding: 15px 20px;
+        background-color: transparent;
+        padding: 10px 15px;
+        width: auto;
+        text-align: center;
+        margin: 2% 5px;
         color: white;
         transition: 0.3s;
-        border-radius: 5px;
-        margin: 2% 10px;
-    }
-
-    #menu
-    {
-        display: none;
     }
 
     #menu_opcoes a:hover {
-        background-color: rgb(29, 129, 211);
+        background-color: rgb(19, 103, 172);
+        border-radius: 5px;
     }
 
     #logo {
-        height: 35vh;
-        background-size: 50%;
-        margin: 2%;
+        height: 20vh;
+        background-image: url(img/escudo_ralth_site.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+        z-index: 35;
+        margin: 2% 0;
     }
 
+    #menu {
+        display: none; /* Esconde o menu hamburguer em desktop */
+    }
 
     /* CARROSSEL */
     .carrossel {
-        width: 75%;
-        height: 70vh;
-        max-height: 600px;
-        border-radius: 5px;
+        width: 80%;
+        max-width: 1200px;
+        height: 60vh;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
-  
+
+    .conteudo {
+        display: flex;
+    }
+
     .item {
-        height: 50vh;
-        max-height: 600px;
+        width: 100%;
+        height: 60vh;
+        flex-shrink: 0;
+        background-position: center;
     }
 
     /* CONTEUDO */
     #conteudo {
-        width: 80%;
-        max-width: 1000px;
-        padding: 30px 0;
+        width: 70%;
+        padding: 20px;
+        margin: 2% auto;
+    }
+
+    #conteudo h5{
+        font-size: 28px;
+    }
+
+    #conteudo p{
+        font-size: 22px;
     }
 
     #conteudo h1 {
-        font-size: 36px;
-        margin-bottom: 25px;
+        text-align: center;
+        font-size: 2.5em;
     }
 
     /* RODAPE */
     #rodape {
-        margin-top: 3%;
-        font-size: 35px;
+        background-color: rgb(4, 82, 145);
+        margin-top: 5%;
+        font-size: 25px;
+        width: 100%;
         height: 10vh;
-        padding: 0 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
     }
 
     #complemento1, #complemento {
-        justify-content: center;
+        width: auto;
+        margin: 0 20px;
     }
 
     #insta {
@@ -682,23 +717,33 @@ h1
         margin: 0 15px;
     }
 
-    /* OUTRAS COISAS */
-    .opc_menu {
-        padding: 15px 25px;
-        color: white;
+    /*outras coisas*/
+    .link_rs {
+        text-decoration: none;
+        color: #ffffff;
     }
 
+
     p {
-        font-size: 25px;
+        font-weight: bolder;
+        text-indent: 30px;
+        text-align: justify;
+        color: rgb(0, 0, 128);
+        font-size: 1.1em;
         line-height: 1.6;
     }
 
     h5 {
-        font-size: 22px;
-        margin: 20px 0;
+        font-weight: bolder;
+        font-size: 18px;
+        color: rgb(0, 0, 128);
+        text-align: center;
     }
 
+    h1 {
+        color: rgb(0, 0, 128);
+        margin-bottom: 30px;
+    }
 }
-
 
 
