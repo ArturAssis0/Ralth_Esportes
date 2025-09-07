@@ -1,13 +1,11 @@
-
-html, body
-{
+html,
+body {
     margin: 0vw 0vh;
     font-family: 'Montserrat';
     background-color: transparent;
 }
 
-#main_div
-{
+#main_div {
     width: 100%;
     height: auto;
     display: flex;
@@ -17,8 +15,7 @@ html, body
     background-color: transparent;
 }
 
-#opcoes
-{
+#opcoes {
     margin-top: 10%;
     margin-bottom: 10%;
     width: 100%;
@@ -31,12 +28,15 @@ html, body
 
 }
 
-#meio_topo
-{
+#conteudo-geral {
+    text-align: center;
+}
+
+#meio_topo {
     background-color: rgb(4, 82, 145);
     display: flex;
     flex-direction: row-reverse;
-    justify-content:right;
+    justify-content: right;
     align-items: center;
     width: 100vw;
     height: 6vh;
@@ -58,9 +58,9 @@ html, body
     transition: all 0.5s ease-out;
     transition: all 0.5s ease-in;
     box-sizing: border-box;
-    max-height: 0; 
-    opacity: 0; 
-    border:  solid 1px rgb(216, 216, 216);
+    max-height: 0;
+    opacity: 0;
+    border: solid 1px rgb(216, 216, 216);
     margin-top: 5.5%;
     margin-bottom: 5%;
     z-index: 25;
@@ -94,8 +94,7 @@ html, body
     background-color: #ddd;
 }
 
-#logo
-{
+#logo {
     margin-right: 5%;
     margin-top: 3%;
     height: 26vh;
@@ -108,8 +107,7 @@ html, body
 }
 
 
-#menu
-{
+#menu {
     background-image: url(img/img_menu.png);
     background-size: 35%;
     background-position: center;
@@ -120,8 +118,7 @@ html, body
 
 /* CARROSSEL */
 
-.carrossel
-{
+.carrossel {
 
     width: 100%;
     max-width: 100vw;
@@ -131,72 +128,63 @@ html, body
     overflow: hidden;
     z-index: 1;
 }
-  
-  .conteudo
-{
+
+.conteudo {
     display: flex;
 }
-  
-.item 
-{
-    
+
+.item {
+
     width: 100%;
     height: 30vh;
     flex-shrink: 0;
     background-position: center;
 }
-  
-.img1 
-{ 
-    background-image: url(img/carrossel_1.jpg); 
-    background-size:cover;
-    background-position: center;
-}
 
-.img2 
-{ 
-    background-image: url(img/carrossel_2.jpg); 
+.img1 {
+    background-image: url(img/carrossel_1.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.img3 
-{ 
-    background-image: url(img/carrossel_3.jpg); 
+.img2 {
+    background-image: url(img/carrossel_2.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.img4 
-{ 
-    background-image: url(img/carrossel_4.jpg); 
+.img3 {
+    background-image: url(img/carrossel_3.jpg);
     background-size: cover;
     background-position: center;
 }
-  
-.anterior, .proximo 
-{
+
+.img4 {
+    background-image: url(img/carrossel_4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.anterior,
+.proximo {
     color: white;
 }
 
 /* CONTEUDO */
 
-#conteudo
-{
+#conteudo {
     width: 90%;
-    padding: 5px;
-    
+    padding: 18px;
+
 }
 
-#conteudo h1
-{
+#conteudo h1 {
     text-align: left;
 }
 
 /* RODAPE */
 
-#rodape
-{
+#rodape {
     background-color: rgb(4, 82, 145);
     margin-top: 10%;
     font-size: 15px;
@@ -209,8 +197,7 @@ html, body
     color: white;
 }
 
-#complemento1
-{
+#complemento1 {
     margin-left: 5%;
     width: 100%;
     display: flex;
@@ -218,16 +205,14 @@ html, body
     flex-direction: row;
 }
 
-#complemento
-{
+#complemento {
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: row;
 }
 
-#insta
-{
+#insta {
     width: 15%;
     height: 5vh;
     background-image: url(img/logo_instagram.png);
@@ -237,8 +222,7 @@ html, body
     margin-right: 2%;
 }
 
-#wzp
-{
+#wzp {
     width: 15%;
     height: 5vh;
     background-image: url(img/img_wzp.png);
@@ -251,55 +235,50 @@ html, body
 
 /*outras coisas*/
 
-.link_rs
-{
+.link_rs {
     text-decoration: none;
     color: #ffffff;
 }
 
-.opc_menu
-{
+.opc_menu {
     text-decoration: none;
     color: rgb(66, 66, 66);
     padding: 10px;
     width: 95vw;
-    
+
 }
 
-.opc
-{
+.opc {
     background-color: white;
     width: 25%;
-    height:100%;
+    height: 100%;
     padding: 10px;
 }
 
-p
-{
+p {
     font-weight: bolder;
     text-indent: 30px;
     text-align: justify;
     color: rgb(0, 0, 128);
 }
 
-h5
-{
+h5 {
     font-weight: bolder;
     font-size: 16px;
     color: rgb(0, 0, 128);
     text-align: center;
 }
 
-h1
-{
+h1 {
     color: rgb(0, 0, 128);
 }
 
 /*formatação para tablets*/
 
-@media (min-width: 600px) and (max-width: 899px) 
-{
-    html, body {
+@media (min-width: 600px) and (max-width: 899px) {
+
+    html,
+    body {
         margin: 0;
         font-family: 'Montserrat';
         background-color: transparent;
@@ -354,8 +333,8 @@ h1
         text-align: center;
         transition: all 0.5s ease;
         box-sizing: border-box;
-        max-height: 0; 
-        opacity: 0; 
+        max-height: 0;
+        opacity: 0;
         border: solid 1px rgb(216, 216, 216);
         margin-top: 4%;
         z-index: 25;
@@ -365,6 +344,15 @@ h1
         max-height: 50vh;
         opacity: 1;
         padding: 15px;
+    }
+
+    #conteudo-geral {
+        width: 65%;
+        padding: 5%;
+        box-shadow:
+            3px 3px 3px rgba(117, 117, 117, 0.2),
+            -3px -3px 3px rgba(117, 117, 117, 0.2);
+        border-radius: 5px;
     }
 
     #menu_opcoes a {
@@ -383,7 +371,7 @@ h1
     }
 
     #logo {
-        
+
         margin-right: 14%;
         height: 32vh;
         background-image: url(img/escudo_ralth_site.png);
@@ -414,43 +402,44 @@ h1
         overflow: hidden;
         z-index: 1;
     }
-  
+
     .conteudo {
         display: flex;
     }
-  
+
     .item {
         width: 100%;
         height: 40vh;
         flex-shrink: 0;
         background-position: center;
     }
-  
-    .img1 { 
-        background-image: url(img/carrossel_1.jpg); 
+
+    .img1 {
+        background-image: url(img/carrossel_1.jpg);
         background-size: cover;
         background-position: center;
     }
 
-    .img2 { 
-        background-image: url(img/carrossel_2.jpg); 
+    .img2 {
+        background-image: url(img/carrossel_2.jpg);
         background-size: cover;
         background-position: center;
     }
 
-    .img3 { 
-        background-image: url(img/carrossel_3.jpg); 
+    .img3 {
+        background-image: url(img/carrossel_3.jpg);
         background-size: cover;
         background-position: center;
     }
 
-    .img4 { 
-        background-image: url(img/carrossel_4.jpg); 
+    .img4 {
+        background-image: url(img/carrossel_4.jpg);
         background-size: cover;
         background-position: center;
     }
-  
-    .anterior, .proximo {
+
+    .anterior,
+    .proximo {
         color: white;
     }
 
@@ -553,7 +542,9 @@ h1
 /*formatação para desktops*/
 
 @media (min-width: 900px) {
-    html, body {
+
+    html,
+    body {
         margin-top: 2vh;
         font-family: 'Montserrat';
         background-color: transparent;
@@ -569,15 +560,15 @@ h1
         background-color: transparent;
     }
 
-    #conteudo-geral{
+    #conteudo-geral {
         width: 65%;
         padding: 5%;
         box-shadow:
-        3px 3px 3px rgba(117, 117, 117, 0.2), 
-        -3px -3px 3px rgba(117, 117, 117, 0.2);
+            3px 3px 3px rgba(117, 117, 117, 0.2),
+            -3px -3px 3px rgba(117, 117, 117, 0.2);
         border-radius: 5px;
     }
-    
+
 
     #opcoes {
         margin-top: 2%;
@@ -612,8 +603,8 @@ h1
         width: auto;
         max-height: none;
         box-shadow:
-        3px 3px 3px rgba(117, 117, 117, 0.2), 
-        -3px -3px 3px rgba(117, 117, 117, 0.2);
+            3px 3px 3px rgba(117, 117, 117, 0.2),
+            -3px -3px 3px rgba(117, 117, 117, 0.2);
         opacity: 1;
         border-radius: 5px;
         margin-top: 10vh;
@@ -649,7 +640,8 @@ h1
     }
 
     #menu {
-        display: none; /* Esconde o menu hamburguer em desktop */
+        display: none;
+        /* Esconde o menu hamburguer em desktop */
     }
 
     /* CARROSSEL */
@@ -682,11 +674,11 @@ h1
         margin: 2% auto;
     }
 
-    #conteudo h5{
+    #conteudo h5 {
         font-size: 28px;
     }
 
-    #conteudo p{
+    #conteudo p {
         font-size: 22px;
     }
 
@@ -709,7 +701,8 @@ h1
         color: white;
     }
 
-    #complemento1, #complemento {
+    #complemento1,
+    #complemento {
         width: auto;
         margin: 0 20px;
     }
@@ -758,5 +751,3 @@ h1
         margin-bottom: 30px;
     }
 }
-
-
