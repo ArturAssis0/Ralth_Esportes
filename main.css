@@ -569,6 +569,16 @@ h1
         background-color: transparent;
     }
 
+    #conteudo-geral{
+        width: 65%;
+        padding: 5%;
+        box-shadow:
+        3px 3px 3px rgba(117, 117, 117, 0.2), 
+        -3px -3px 3px rgba(117, 117, 117, 0.2);
+        border-radius: 5px;
+    }
+    
+
     #opcoes {
         margin-top: 2%;
         margin-bottom: 2%;
@@ -601,6 +611,9 @@ h1
         position: static;
         width: auto;
         max-height: none;
+        box-shadow:
+        3px 3px 3px rgba(117, 117, 117, 0.2), 
+        -3px -3px 3px rgba(117, 117, 117, 0.2);
         opacity: 1;
         border-radius: 5px;
         margin-top: 10vh;
