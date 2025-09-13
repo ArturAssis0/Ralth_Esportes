@@ -1,14 +1,21 @@
-html, body {
-    margin: 0;
-    font-family: sans-serif;
-    background-color: #fff;
+html,
+body {
+    margin: 0vw 0vh;
     font-family: 'Montserrat';
+    background-color: transparent;
 }
 
-/* TOPO */
+#main_div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
 
-#opcoes
-{
+#opcoes {
     margin-top: 10%;
     margin-bottom: 10%;
     width: 100%;
@@ -17,15 +24,19 @@ html, body {
     text-align: center;
     display: flex;
     background-color: transparent;
+    z-index: 30;
 
 }
 
-#meio_topo
-{
+#conteudo-geral {
+    text-align: center;
+}
+
+#meio_topo {
     background-color: rgb(4, 82, 145);
     display: flex;
     flex-direction: row-reverse;
-    justify-content:right;
+    justify-content: right;
     align-items: center;
     width: 100vw;
     height: 6vh;
@@ -47,12 +58,12 @@ html, body {
     transition: all 0.5s ease-out;
     transition: all 0.5s ease-in;
     box-sizing: border-box;
-    max-height: 0; 
-    opacity: 0; 
-    border:  solid 1px rgb(216, 216, 216);
+    max-height: 0;
+    opacity: 0;
+    border: solid 1px rgb(216, 216, 216);
     margin-top: 5.5%;
     margin-bottom: 5%;
-    z-index: 30;
+    z-index: 25;
 
 }
 
@@ -112,7 +123,7 @@ html, body {
     text-decoration: none;
     color: rgb(66, 66, 66);
     padding: 10px;
-    width: 95vw;
+    width: 5vw;
     
 }
 
@@ -156,27 +167,47 @@ html, body {
     flex-direction: row;
 }
 
-#insta
-{
+#insta {
     width: 15%;
     height: 5vh;
     background-image: url(../img/logo_instagram.png);
     background-size: 200%;
     background-position: center;
     background-repeat: no-repeat;
-    margin-right: 2%;
+    cursor: pointer;
+
 }
 
-#wzp
-{
+#wzp {
     width: 15%;
     height: 5vh;
-    background-image: url(../img/img_wzp.png);
+    background-image: url(../img/esborso\ site\ ralth\ -\ ZAP\ 2.png);
     background-size: 90%;
     background-position: center;
     background-repeat: no-repeat;
-    margin-right: 3%;
-    margin-left: 2%;
+
+}
+
+
+#yout {
+    width: 15%;
+    height: 5vh;
+    background-image: url(../img/esborso\ site\ ralth\ -\ you.png);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+#face {
+    width: 15%;
+    height: 5vh;
+    background-image: url(../img/esborso\ site\ ralth\ -\ face.png);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 .link_rs
@@ -193,65 +224,251 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     width: 100%;
 }
 
 
 #item_1
 {
-    background-image: url(../img/logo_ccv.webp);
-    background-size: cover;
+    background-image: url(../img/SUPREMO\ VÔLEI.png);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #item_2
 {
-    background-image: url(../img/logo_supremo.webp);
-    background-size: cover;
+    background-image: url(../img/KALIL\ VOLEI.png);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #item_3
 {
-    background-image: url(../img/logo_elizabeth.webp);
-    background-size: cover;
+    background-image: url(../img/CONSTRUIR\ VÔLEI.png);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #item_4
 {
-    background-image: url(../img/logo_ihf.webp);
-    background-size: cover;
+    background-image: url(../img/CRESCER\ ESPORTES.png);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-#item_5
-{
-    background-image: url(../img/img_volei.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+/* Área de informações da escola */
+#info_escola {
+    width: 31%;
+    padding: 10px;
+    margin-left: 17%;
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    color: rgb(31, 84, 124); 
 }
 
-#item_6
-{
-    background-image: url(../img/logo_construir.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+/* Título (nome da escola) */
+#info_escola h2 {
+    color: rgb(31, 84, 124);   
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Texto da descrição */
+#info_escola p {
+    text-align: left;      
+    font-size: 1rem;
+    line-height: 1.6;   
+    margin: 8px 0;
+    transition: ease-in-out(0.2,0.2);
 }
 
 
 .iten_escola
 {
-    width: 12%;
-    height: 8vh;
+    width: 11vw;
+    height: 10vh;
     text-align: center;
     padding: 40px;
     margin: 0.5%;
+}
+
+@media (min-width: 900px) {
+    html,
+    body {
+        margin-top: 2vh;
+        font-family: 'Montserrat';
+        background-color: transparent;
+    }
+
+    #main_div {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    #conteudo-geral {
+        width: 110%;
+        padding: 5%;
+        border-radius: 5px;
+    }
+
+
+    #opcoes {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 100%;
+        height: 8vh;
+        text-align: center;
+        display: flex;
+        background-color: transparent;
+        z-index: 30;
+        justify-content: space-between;
+    }
+
+    #meio_topo {
+        background-color: rgb(31, 84, 124);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 10vh;
+        padding: 0 10%;
+        margin-top: 2vh;
+    }
+
+    #menu_opcoes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(31, 84, 124);
+        position: static;
+        width: auto;
+        max-height: none;
+        box-shadow:
+            3px 3px 3px rgba(117, 117, 117, 0.2),
+            -3px -3px 3px rgba(117, 117, 117, 0.2);
+        opacity: 1;
+        border-radius: 5px;
+        margin-top: 10vh;
+        margin-bottom: -5vh;
+        padding: 0;
+    }
+
+    #menu_opcoes a {
+        font-size: 25px;
+        font-weight: bold;
+        background-color: transparent;
+        padding: 10px 15px;
+        width: auto;
+        text-align: center;
+        margin: 2% 5px;
+        color: white;
+        transition: 0.3s;
+    }
+
+    #menu_opcoes a:hover {
+        background-color: rgb(19, 103, 172);
+        border-radius: 5px;
+    }
+
+    #logo {
+        height: 20vh;
+        background-image: url(../img/escudo_ralth_site.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+        z-index: 35;
+        margin: 2% 0;
+    }
+
+    #menu {
+        display: none;
+        /* Esconde o menu em desktop */
+    }
+
+    /* RODAPE */
+    #rodape {
+        background-color: rgb(31, 84, 124);
+        margin-top: 25%;
+        font-size: 25px;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        color: white;
+    }
+
+    #complemento1,
+    #complemento {
+        width: auto;
+    }
+
+    #insta {
+        width: 5vw;
+        height: 5vh;
+        background-position: center;
+        background-size: cover;
+        background-size: 100%;
+
+    }
+
+    #wzp {
+        width: 5vw;
+        height: 5vh;
+        background-size: contain;
+
+    }
+
+    #yout {
+        width: 5vw;
+        height: 5vh; /*AQUI */
+        background-size: contain;
+
+    }
+
+    #face {
+        width: 5vw;
+        height: 5vh;
+        background-size: contain;
+    }
+
+
+    /*outras coisas*/
+    .link_rs {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+
+    p {
+        font-weight: bolder;
+        text-indent: 30px;
+        text-align: justify;
+        color: rgb(255, 255, 255);
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+
+    h5 {
+        font-weight: bolder;
+        font-size: 18px;
+        color: rgb(31, 84, 124);
+        text-align: center;
+    }
+
+    h1 {
+        color: rgb(255, 255, 255);
+        margin-bottom: 30px;
+    }
 }

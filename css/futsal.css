@@ -1,14 +1,21 @@
-html, body {
-    margin: 0;
-    font-family: sans-serif;
-    background-color: #fff;
+html,
+body {
+    margin: 0vw 0vh;
     font-family: 'Montserrat';
+    background-color: transparent;
 }
 
-/* TOPO */
+#main_div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
 
-#opcoes
-{
+#opcoes {
     margin-top: 10%;
     margin-bottom: 10%;
     width: 100%;
@@ -21,12 +28,15 @@ html, body {
 
 }
 
-#meio_topo
-{
+#conteudo-geral {
+    text-align: center;
+}
+
+#meio_topo {
     background-color: rgb(4, 82, 145);
     display: flex;
     flex-direction: row-reverse;
-    justify-content:right;
+    justify-content: right;
     align-items: center;
     width: 100vw;
     height: 6vh;
@@ -113,7 +123,7 @@ html, body {
     text-decoration: none;
     color: rgb(66, 66, 66);
     padding: 10px;
-    width: 95vw;
+    width: 5vw;
     
 }
 
@@ -214,71 +224,96 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     width: 100%;
 }
 
 
 #item_1
 {
-    background-image: url(../img/logo_ccv.webp);
-    background-size: cover;
+    background-image: url(../img/CCV\ FUTSAL.png);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #item_2
 {
-    background-image: url(../img/logo_supremo.webp);
-    background-size: cover;
+    background-image: url(../img/SUPREMO\ FUTSAL.png);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #item_3
 {
-    background-image: url(../img/logo_elizabeth.webp);
-    background-size: cover;
+    background-image: url(../img/KALIL\ FUTSAL.png);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #item_4
 {
-    background-image: url(../img/logo_ihf.webp);
-    background-size: cover;
+    background-image: url(../img/IHF\ FUTSAL.png);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #item_5
 {
-    background-image: url(../img/img_volei.jpg);
-    background-size: cover;
+    background-image: url(../img/CRESCER\ ESPORTES.png);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #item_6
 {
-    background-image: url(../img/logo_construir.webp);
-    background-size: cover;
+    background-image: url(../img/CONSTRUIR\ FUTSAL.png);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+/* Área de informações da escola */
+#info_escola {
+    padding: 20px;
+    margin: 20px 0 20px 20px;
+    max-width: 600px;
+    font-family: "Montserrat", sans-serif;
+    text-align: left;               
+    transform: translateY(20px); 
+}
+
+/* Título (nome da escola) */
+#info_escola h2 {
+    color: #2c3e50;   
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Texto da descrição */
+#info_escola p {
+    text-align: left;
+    color: #555;       
+    font-size: 1rem;
+    line-height: 1.6;   
+    margin: 8px 0;
+    transition: ease-in-out(0.2,0.2);
 }
 
 
 .iten_escola
 {
-    width: 12%;
-    height: 8vh;
+    width: 11vw;
+    height: 10vh;
     text-align: center;
     padding: 40px;
     margin: 0.5%;
 }
 
 @media (min-width: 900px) {
-
     html,
     body {
         margin-top: 2vh;
@@ -286,6 +321,15 @@ html, body {
         background-color: transparent;
     }
 
+    #main_div {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
 
     #conteudo-geral {
         width: 110%;
@@ -372,7 +416,7 @@ html, body {
     /* RODAPE */
     #rodape {
         background-color: rgb(31, 84, 124);
-        margin-top: 5%;
+        margin-top: 25%;
         font-size: 25px;
         width: 100%;
         height: 10vh;
