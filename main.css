@@ -191,14 +191,11 @@ body {
     width: 100%;
     height: 6vh;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+
     color: white;
 }
 
 #complemento1 {
-    margin-left: 5%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -210,6 +207,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: row;
+    justify-content: right;
 }
 
 #insta {
@@ -219,18 +217,40 @@ body {
     background-size: 200%;
     background-position: center;
     background-repeat: no-repeat;
-    margin-right: 2%;
+    cursor: pointer;
+
 }
 
 #wzp {
     width: 15%;
     height: 5vh;
-    background-image: url(img/img_wzp.png);
+    background-image: url(img/esborso\ site\ ralth\ -\ ZAP\ 2.png);
     background-size: 90%;
     background-position: center;
     background-repeat: no-repeat;
-    margin-right: 3%;
-    margin-left: 2%;
+
+}
+
+
+#yout {
+    width: 15%;
+    height: 5vh;
+    background-image: url(img/esborso\ site\ ralth\ -\ you.png);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+#face {
+    width: 15%;
+    height: 5vh;
+    background-image: url(img/esborso\ site\ ralth\ -\ face.png);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 /*outras coisas*/
@@ -257,9 +277,8 @@ body {
 
 p {
     font-weight: bolder;
-    text-indent: 30px;
     text-align: justify;
-    color: rgb(0, 0, 128);
+    color: rgb(255, 255, 255);
 }
 
 h5 {
@@ -561,11 +580,8 @@ h1 {
     }
 
     #conteudo-geral {
-        width: 65%;
+        width: 110%;
         padding: 5%;
-        box-shadow:
-            3px 3px 3px rgba(117, 117, 117, 0.2),
-            -3px -3px 3px rgba(117, 117, 117, 0.2);
         border-radius: 5px;
     }
 
@@ -573,7 +589,7 @@ h1 {
     #opcoes {
         margin-top: 2%;
         margin-bottom: 2%;
-        width: 80%;
+        width: 100%;
         height: 8vh;
         text-align: center;
         display: flex;
@@ -583,7 +599,7 @@ h1 {
     }
 
     #meio_topo {
-        background-color: rgb(4, 82, 145);
+        background-color: rgb(31, 84, 124);
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -598,7 +614,7 @@ h1 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background-color: rgb(4, 82, 145);
+        background-color: rgb(31, 84, 124);
         position: static;
         width: auto;
         max-height: none;
@@ -608,6 +624,7 @@ h1 {
         opacity: 1;
         border-radius: 5px;
         margin-top: 10vh;
+        margin-bottom: -5vh;
         padding: 0;
     }
 
@@ -646,14 +663,15 @@ h1 {
 
     /* CARROSSEL */
     .carrossel {
-        width: 80%;
+        width: 100%;
         max-width: 1200px;
-        height: 60vh;
+        height: 40vh;
         position: relative;
         overflow: hidden;
         z-index: 1;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 5%;
     }
 
     .conteudo {
@@ -669,7 +687,9 @@ h1 {
 
     /* CONTEUDO */
     #conteudo {
-        width: 70%;
+        background-color: rgb(31, 84, 124);
+        width: 55%;
+        border-radius: 10px;
         padding: 20px;
         margin: 2% auto;
     }
@@ -679,6 +699,9 @@ h1 {
     }
 
     #conteudo p {
+        margin-left: 10%;
+        text-align: justify;
+        width: 80%;
         font-size: 22px;
     }
 
@@ -689,22 +712,20 @@ h1 {
 
     /* RODAPE */
     #rodape {
-        background-color: rgb(4, 82, 145);
+        background-color: rgb(31, 84, 124);
         margin-top: 5%;
         font-size: 25px;
         width: 100%;
         height: 10vh;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: right;
         color: white;
     }
 
     #complemento1,
     #complemento {
         width: auto;
-        margin: 0 20px;
     }
 
     #insta {
@@ -713,15 +734,29 @@ h1 {
         background-position: center;
         background-size: cover;
         background-size: 100%;
-        margin: 0 15px;
+
     }
 
     #wzp {
         width: 5vw;
         height: 5vh;
         background-size: contain;
-        margin: 0 15px;
+
     }
+
+    #yout {
+        width: 5vw;
+        height: 5vh; /*AQUI */
+        background-size: contain;
+
+    }
+
+    #face {
+        width: 5vw;
+        height: 5vh;
+        background-size: contain;
+    }
+
 
     /*outras coisas*/
     .link_rs {
@@ -734,7 +769,7 @@ h1 {
         font-weight: bolder;
         text-indent: 30px;
         text-align: justify;
-        color: rgb(0, 0, 128);
+        color: rgb(255, 255, 255);
         font-size: 1.1em;
         line-height: 1.6;
     }
@@ -742,12 +777,12 @@ h1 {
     h5 {
         font-weight: bolder;
         font-size: 18px;
-        color: rgb(0, 0, 128);
+        color: rgb(31, 84, 124);
         text-align: center;
     }
 
     h1 {
-        color: rgb(0, 0, 128);
+        color: rgb(255, 255, 255);
         margin-bottom: 30px;
     }
 }
