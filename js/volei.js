@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                  <div>${dados.horarios1}<br><br>${dados.horarios2}</div></div>`;
             }
             infoSection.style.display = "block";
-            infoSection.scrollIntoView({ behavior: "smooth", block: "start" });
+            infoSection.scrollIntoView({ behavior: "smooth", block: "start" }); //tirar dps
         });
     });
 });
