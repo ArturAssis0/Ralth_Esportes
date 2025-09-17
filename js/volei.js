@@ -52,11 +52,41 @@ document.addEventListener("DOMContentLoaded", () => {
                         O INSTITUTO ELIZABETH KALIL possui uma estrutura fantástica, além de ter uma linda história de mais de 50 anos de Excelência de Ensino. 
                         Iniciamos nossa parceria em 2023, com a proposta de ensinar o VÔLEI de forma dinâmica e lúdica no âmbito escolar. Utilizamos as dependências
                         do Colégio proporcionando aos alunos um ambiente seguro e acolhedor, propício para o aprendizado e para fazer muitas amizades.`,
+            nome2: "DIAS E HORARIOS",
+            imagem: "../img/CONSTRUIR FUTSAL.png",
+
+        },
+        item_3: {
+            nome: "ESCOLA DE VÔLEI CONSTRUIR +",
+
+            horarios1: ``,
+
+            horarios2: `TURNO TARDE DIAS DA SEMANA: 3ª E 5ª FEIRA HORÁRIO: 17H40 ÀS 18H30 - SUB 11 E 13`,
+
+            descricao: `A Escola de Vôlei CONSTRUIR +, está inserida em um dos Colégios da rede particular 
+                        mais tradicionais de Contagem; O COLÉGIO CONSTRUIR MAIS possui uma estrutura fantástica,
+                        além de ter uma linda história de Excelência de Ensino. 
+                        Iniciamos nossa parceria em 2024, com a proposta de ensinar o VÔLEI de forma dinâmica e 
+                        lúdica no âmbito escolar. Utilizamos as dependências do Colégio proporcionando aos alunos um ambiente seguro e acolhedor,
+                        propício para o aprendizado e para fazer muitas amizades.`,
             nome2: "DIAS E HORARIOS"
 
         },
-        item_3: { nome: "Escola C", descricao: "ccc" },
-        item_4: { nome: "Escola D", descricao: "ddd" },
+        item_4: {
+            nome: "ESCOLA DE ESPORTES CRESCER",
+
+            horarios1: `TURNO MANHÃ DIAS DA SEMANAS: 2ª E 4ª FEIRA HORÁRIO: 11H40 ÀS 12H30 - SUB 11 E 13`,
+
+            horarios2: `TURNO TARDE DIAS DA SEMANAS: 3ª E 5ª FEIRA HORÁRIO: 17H40 ÀS 18H30 - SUB 08|10|12`,
+
+            descricao: `A Escola de Esportes CRESCER, está inserida em um dos Colégios da rede particular mais tradicionais de Contagem;
+                        O COLÉGIO CRESCER CONTAGEM possui uma estrutura fantástica, além de ter uma linda história de Excelência de Ensino. 
+                        Iniciamos nossa parceria em 2025, com a proposta de ensinar o VÔLEI de forma dinâmica e lúdica no âmbito escolar. 
+                        Utilizamos as dependências do Colégio proporcionando aos alunos um ambiente seguro e acolhedor, propício para o aprendizado
+                         e para fazer muitas amizades.`,
+            nome2: "DIAS E HORARIOS"
+
+        },
     };
 
     // cria/separa a área de informações (insere após o container de escolas)
@@ -81,13 +111,21 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!dados) {
                 infoSection.innerHTML = "<p>Informações não disponíveis para esta escola.</p>";
             } else {
-                infoSection.innerHTML = `<div><h2>${dados.nome}</h2>
-                                 <div>${dados.descricao}</div></div>
-                                 <div><h2>${dados.nome2}</h2>
-                                 <div>${dados.horarios1}<br><br>${dados.horarios2}</div></div>`;
+                infoSection.innerHTML = `
+   <div class="info-conteudo">
+        <div class="info-texto">
+            <h2>${dados.nome}</h2>
+            <div>${dados.descricao}</div>
+            <h2>${dados.nome2}</h2>
+            <div>${dados.horarios2}<br><br>${dados.horarios1}</div>
+        </div>
+        <div class="info-imagem">
+            <img src="${dados.imagem}" alt="${dados.nome}" class="imagem-escola">
+        </div>
+    </div>`;
             }
             infoSection.style.display = "block";
-            infoSection.scrollIntoView({ behavior: "smooth", block: "start" }); //tirar dps
+
         });
     });
 });
