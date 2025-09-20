@@ -38,7 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
                      O COLÉGIO SUPREMO possui uma estrutura fantástica, além de ter uma linda história de mais de 29 anos de Excelência de Ensino. 
                      Iniciamos nossa parceria em 2019, com a proposta de ensinar o VÔLEI de forma dinâmica e lúdica no âmbito escolar. Utilizamos as dependências do Colégio
                       proporcionando aos alunos um ambiente seguro e acolhedor, propício para o aprendizado e para fazer muitas amizades.`,
-            nome2: "DIAS E HORARIOS"
+            nome2: "DIAS E HORARIOS",
+            imagem: "img/SUPREMO VÔLEI.png",
 
         },
         item_2: {
@@ -53,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         Iniciamos nossa parceria em 2023, com a proposta de ensinar o VÔLEI de forma dinâmica e lúdica no âmbito escolar. Utilizamos as dependências
                         do Colégio proporcionando aos alunos um ambiente seguro e acolhedor, propício para o aprendizado e para fazer muitas amizades.`,
             nome2: "DIAS E HORARIOS",
-            imagem: "img/CONSTRUIR FUTSAL.png",
+            imagem: "img/KALIL VOLEI.png",
 
         },
         item_3: {
@@ -69,7 +70,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         Iniciamos nossa parceria em 2024, com a proposta de ensinar o VÔLEI de forma dinâmica e 
                         lúdica no âmbito escolar. Utilizamos as dependências do Colégio proporcionando aos alunos um ambiente seguro e acolhedor,
                         propício para o aprendizado e para fazer muitas amizades.`,
-            nome2: "DIAS E HORARIOS"
+            nome2: "DIAS E HORARIOS",
+            imagem: "img/CONSTRUIR VÔlEI.png",
 
         },
         item_4: {
@@ -84,7 +86,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         Iniciamos nossa parceria em 2025, com a proposta de ensinar o VÔLEI de forma dinâmica e lúdica no âmbito escolar. 
                         Utilizamos as dependências do Colégio proporcionando aos alunos um ambiente seguro e acolhedor, propício para o aprendizado
                          e para fazer muitas amizades.`,
-            nome2: "DIAS E HORARIOS"
+            nome2: "DIAS E HORARIOS",
+            imagem: "img/CRESCER ESPORTES.png",
 
         },
     };
