@@ -288,7 +288,7 @@ body {
 
 /* Título (nome da escola) */
 #info_escola h2 {
-    color: #2c3e50;   
+    color: rgb(31, 84, 124);   
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
@@ -296,7 +296,7 @@ body {
 /* Texto da descrição */
 #info_escola p {
     text-align: left;
-    color: #555;       
+    color: rgb(31, 84, 124);       
     font-size: 1rem;
     line-height: 1.6;   
     margin: 8px 0;
@@ -495,7 +495,8 @@ body {
     justify-content:flex-start;
     gap: 10%;
     width: 40vw;
-    margin-left: -52%;
+    margin-left: 46%;
+    color: rgb(31, 84, 124);
 }
 
 .info-conteudo div {
