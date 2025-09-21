@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         Iniciamos nossa parceria em 2023, com a proposta de ensinar o FUTSAL de forma dinâmica e lúdica no âmbito escolar. Utilizamos as 
                         dependências do Colégio proporcionando aos alunos um ambiente seguro e acolhedor, propício para o aprendizado e para fazer muitas amizades. `,
             nome2: "DIAS E HORARIOS",
-            imagem: "img/CONSTRUIR VÔlEI.png",
+            imagem: "img/CRESCER ESPORTES.png",
 
         },
         item_4: {

@@ -489,3 +489,25 @@ body {
         margin-bottom: 30px;
     }
 }
+
+.info-conteudo {
+    display: flex;
+    justify-content:flex-start;
+    gap: 10%;
+    width: 40vw;
+    margin-left: -52%;
+}
+
+.info-conteudo div {
+    width: 20vw;
+}
+
+.info-imagem {
+    width: 40vw;
+}
+
+.imagem-escola {
+    margin-top: 8%;
+    width: 35vw;
+    height: 40vh;
+}
