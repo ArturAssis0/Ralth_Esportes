@@ -1,5 +1,6 @@
+/* ---------- BASE ---------- */
 html,
-body {
+body { 
     margin: 0vw 0vh;
     font-family: 'Montserrat';
     background-color: transparent;
@@ -25,7 +26,6 @@ body {
     display: flex;
     background-color: transparent;
     z-index: 30;
-
 }
 
 #conteudo-geral {
@@ -33,7 +33,7 @@ body {
 }
 
 #meio_topo {
-    background-color: rgb(4, 82, 145);
+    background-color: rgb(31, 84, 124);
     display: flex;
     flex-direction: row-reverse;
     justify-content: right;
@@ -42,6 +42,7 @@ body {
     height: 6vh;
 }
 
+/* ---------- MENU ---------- */
 #menu_opcoes {
     overflow: hidden;
     display: flex;
@@ -56,7 +57,6 @@ body {
     width: 32vw;
     text-align: center;
     transition: all 0.5s ease-out;
-    transition: all 0.5s ease-in;
     box-sizing: border-box;
     max-height: 0;
     opacity: 0;
@@ -64,20 +64,14 @@ body {
     margin-top: 5.5%;
     margin-bottom: 5%;
     z-index: 25;
-
 }
 
 #menu_opcoes.mostrar {
-
     max-height: 60vh;
     opacity: 1;
     padding: 10px;
     transition: all 0.5s ease-in;
-    transition: all 0.5s ease-out;
 }
-
-
-
 
 #menu_opcoes a {
     font-size: 14px;
@@ -94,22 +88,19 @@ body {
     background-color: #ddd;
 }
 
-#logo
-{
+#logo {
     margin-right: 5%;
     margin-top: 3%;
-    height: 22vh;
+    height: 26vh;
     background-image: url(../img/escudo_ralth_site.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 90%;
     background-color: transparent;
-    z-index: 25;
+    z-index: 35;
 }
 
-
-#menu
-{
+#menu {
     background-image: url(../img/img_menu.png);
     background-size: 35%;
     background-position: center;
@@ -118,108 +109,67 @@ body {
     cursor: pointer;
 }
 
-.opc_menu
-{
+.opc_menu {
     text-decoration: none;
     color: rgb(66, 66, 66);
     padding: 10px;
-    width: 5vw;
-    
+    width: 95vw;
 }
 
-.opc
-{
+.opc {
     background-color: white;
     width: 25%;
-    height:100%;
+    height: 100%;
     padding: 10px;
 }
 
-
-#rodape
-{
-    background-color: rgb(4, 82, 145);
-    margin-top: 25%;
+/* ---------- RODAPE ---------- */
+#rodape {
+    background-color: rgb(31, 84, 124);
+    margin-top: 10%;
     font-size: 15px;
     width: 100%;
     height: 6vh;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     color: white;
 }
 
-#complemento1
-{
-    margin-left: 5%;
+#complemento1 {
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: row;
 }
 
-#complemento
-{
+#complemento {
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: row;
+    justify-content: right;
 }
 
-#insta {
+#insta, #wzp, #yout, #face {
     width: 15%;
     height: 5vh;
-    background-image: url(../img/logo_instagram.png);
-    background-size: 200%;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 90%;
     cursor: pointer;
-
 }
 
-#wzp {
-    width: 15%;
-    height: 5vh;
-    background-image: url(../img/esborso\ site\ ralth\ -\ ZAP\ 2.png);
-    background-size: 90%;
-    background-position: center;
-    background-repeat: no-repeat;
+#insta { background-image: url(../img/logo_instagram.png); background-size: 200%; }
+#wzp  { background-image: url(../img/esborso\ site\ ralth\ -\ ZAP\ 2.png); }
+#yout { background-image: url(../img/esborso\ site\ ralth\ -\ you.png); }
+#face { background-image: url(../img/esborso\ site\ ralth\ -\ face.png); }
 
-}
-
-
-#yout {
-    width: 15%;
-    height: 5vh;
-    background-image: url(../img/esborso\ site\ ralth\ -\ you.png);
-    background-size: 90%;
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-
-
-#face {
-    width: 15%;
-    height: 5vh;
-    background-image: url(../img/esborso\ site\ ralth\ -\ face.png);
-    background-size: 90%;
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-
-.link_rs
-{
+.link_rs {
     text-decoration: none;
     color: #ffffff;
 }
 
-/* TERMINO DAS FORMATAÇOES FIXAS */
-
-#escolas
-{
+/* ---------- ESCOLAS ---------- */
+#escolas {
     margin-top: 8vh; 
     display: flex;
     justify-content: center;
@@ -227,40 +177,11 @@ body {
     width: 100%;
 }
 
+#item_1 { background-image: url(../img/SUPREMO\ VÔLEI.png); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+#item_2 { background-image: url(../img/KALIL\ VOLEI.png); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+#item_3 { background-image: url(../img/CONSTRUIR\ VÔLEI.png); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+#item_4 { background-image: url(../img/CRESCER\ ESPORTES.png); background-size: 100%; background-repeat: no-repeat; background-position: center; }
 
-#item_1
-{
-    background-image: url(../img/SUPREMO\ VÔLEI.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#item_2
-{
-    background-image: url(../img/KALIL\ VOLEI.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#item_3
-{
-    background-image: url(../img/CONSTRUIR\ VÔLEI.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#item_4
-{
-    background-image: url(../img/CRESCER\ ESPORTES.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-/* Área de informações da escola */
 #info_escola {
     width: 31%;
     padding: 10px;
@@ -270,25 +191,21 @@ body {
     color: rgb(31, 84, 124); 
 }
 
-/* Título (nome da escola) */
 #info_escola h2 {
     color: rgb(31, 84, 124);   
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
 
-/* Texto da descrição */
 #info_escola p {
     text-align: left;      
     font-size: 1rem;
     line-height: 1.6;   
     margin: 8px 0;
-    transition: ease-in-out(0.2,0.2);
 }
 
-
-.iten_escola
-{
+/* blocos das escolas */
+.iten_escola {
     width: 11vw;
     height: 10vh;
     text-align: center;
@@ -296,183 +213,7 @@ body {
     margin: 0.5%;
 }
 
-@media (min-width: 900px) {
-    html,
-    body {
-        margin-top: 2vh;
-        font-family: 'Montserrat';
-        background-color: transparent;
-    }
-
-    #main_div {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-    }
-
-    #conteudo-geral {
-        width: 110%;
-        padding: 5%;
-        border-radius: 5px;
-    }
-
-
-    #opcoes {
-        margin-top: 2%;
-        margin-bottom: 2%;
-        width: 100%;
-        height: 8vh;
-        text-align: center;
-        display: flex;
-        background-color: transparent;
-        z-index: 30;
-        justify-content: space-between;
-    }
-
-    #meio_topo {
-        background-color: rgb(31, 84, 124);
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 10vh;
-        padding: 0 10%;
-        margin-top: 2vh;
-    }
-
-    #menu_opcoes {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        background-color: rgb(31, 84, 124);
-        position: static;
-        width: auto;
-        max-height: none;
-        box-shadow:
-            3px 3px 3px rgba(117, 117, 117, 0.2),
-            -3px -3px 3px rgba(117, 117, 117, 0.2);
-        opacity: 1;
-        border-radius: 5px;
-        margin-top: 10vh;
-        margin-bottom: -5vh;
-        padding: 0;
-    }
-
-    #menu_opcoes a {
-        font-size: 25px;
-        font-weight: bold;
-        background-color: transparent;
-        padding: 10px 15px;
-        width: auto;
-        text-align: center;
-        margin: 2% 5px;
-        color: white;
-        transition: 0.3s;
-    }
-
-    #menu_opcoes a:hover {
-        background-color: rgb(19, 103, 172);
-        border-radius: 5px;
-    }
-
-    #logo {
-        height: 20vh;
-        background-image: url(../img/escudo_ralth_site.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-color: transparent;
-        z-index: 35;
-        margin: 2% 0;
-    }
-
-    #menu {
-        display: none;
-        /* Esconde o menu em desktop */
-    }
-
-    /* RODAPE */
-    #rodape {
-        background-color: rgb(31, 84, 124);
-        margin-top: 25%;
-        font-size: 25px;
-        width: 100%;
-        height: 10vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-        color: white;
-    }
-
-    #complemento1,
-    #complemento {
-        width: auto;
-    }
-
-    #insta {
-        width: 5vw;
-        height: 5vh;
-        background-position: center;
-        background-size: cover;
-        background-size: 100%;
-
-    }
-
-    #wzp {
-        width: 5vw;
-        height: 5vh;
-        background-size: contain;
-
-    }
-
-    #yout {
-        width: 5vw;
-        height: 5vh; /*AQUI */
-        background-size: contain;
-
-    }
-
-    #face {
-        width: 5vw;
-        height: 5vh;
-        background-size: contain;
-    }
-
-
-    /*outras coisas*/
-    .link_rs {
-        text-decoration: none;
-        color: #ffffff;
-    }
-
-
-    p {
-        font-weight: bolder;
-        text-indent: 30px;
-        text-align: justify;
-        color: rgb(255, 255, 255);
-        font-size: 1.1em;
-        line-height: 1.6;
-    }
-
-    h5 {
-        font-weight: bolder;
-        font-size: 18px;
-        color: rgb(31, 84, 124);
-        text-align: center;
-    }
-
-    h1 {
-        color: rgb(255, 255, 255);
-        margin-bottom: 30px;
-    }
-}
-
+/* ---------- INFO + IMAGEM ---------- */
 .info-conteudo {
     display: flex;
     justify-content:flex-start;
@@ -481,16 +222,37 @@ body {
     margin-left: -52%;
 }
 
-.info-conteudo div {
-    width: 20vw;
+.info-conteudo div { width: 20vw; }
+.info-imagem { width: 40vw; }
+.imagem-escola { margin-top: 8%; width: 35vw; height: 40vh; }
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+    #escolas { flex-direction: column; gap: 15px; margin-top: 5vh; }
+    .iten_escola { width: 85vw; height: 24vh; margin: 10px auto; padding: 0; }
+    #info_escola { width: 90%; margin: 10px auto; font-size: 0.9rem; }
+    .info-conteudo { flex-direction: column; gap: 15px; width: 100%; margin: 0; }
+    .info-conteudo div { width: 100%; }
+    .info-imagem { width: 100%; text-align: center; }
+    .imagem-escola { width: 80%; height: auto; }
+    #rodape { background-color: rgb(31, 84, 124); flex-direction: row; justify-content: flex-end; align-items: center; height: auto; padding: 10px 5%; font-size: 14px; }
+    #rodape div { margin: 0 5px; width: auto; }
+    #insta, #wzp, #yout, #face { width: 8vw; height: 5vh; background-size: contain; }
 }
 
-.info-imagem {
-    width: 40vw;
-}
-
-.imagem-escola {
-    margin-top: 8%;
-    width: 35vw;
-    height: 40vh;
+/* ---------- DESKTOP (>=900px) ---------- */
+@media (min-width: 900px) {
+    #opcoes { margin-top: 2%; margin-bottom: 2%; height: 8vh; justify-content: space-between; }
+    #meio_topo { background-color: rgb(31, 84, 124); flex-direction: row; justify-content: center; align-items: center; width: 100%; height: 10vh; padding: 0 10%; margin-top: 2vh; }
+    #menu_opcoes { display: flex; flex-direction: row; justify-content: space-between; background-color: rgb(31, 84, 124); position: static; width: auto; max-height: none; box-shadow: 3px 3px 3px rgba(117, 117, 117, 0.2), -3px -3px 3px rgba(117, 117, 117, 0.2); opacity: 1; border-radius: 5px; margin-top: 10vh; margin-bottom: -5vh; padding: 0; }
+    #menu_opcoes a { font-size: 25px; font-weight: bold; background-color: transparent; padding: 10px 15px; width: auto; text-align: center; margin: 2% 5px; color: white; transition: 0.3s; }
+    #menu_opcoes a:hover { background-color: rgb(19, 103, 172); border-radius: 5px; }
+    #logo { height: 20vh; background-size: contain; margin: 2% 0; }
+    #menu { display: none; }
+    #rodape { margin-top: 15%; font-size: 25px; height: 10vh; flex-direction: row; justify-content: right; color: white; }
+    #complemento1, #complemento { width: auto; }
+    #insta { width: 5vw; height: 5vh; background-size: 100%; }
+    #wzp  { width: 5vw; height: 5vh; background-size: contain; }
+    #yout { width: 5vw; height: 5vh; background-size: contain; }
+    #face { width: 5vw; height: 5vh; background-size: contain; }
 }
