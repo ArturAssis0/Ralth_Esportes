@@ -1,91 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="https://arturassis0.github.io/Ralth_Esportes/" target="_self">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://arturassis0.github.io/Ralth_Esportes/css/torneios.css">
+    <link rel="stylesheet" href="../css/torneios.css">
     <title>Ralth Esportes</title>
 </head>
+
 <body>
-    
+    <div id="main_div">
     <div id="opcoes">
         <div id="meio_topo">
             <div id="menu" class="opc"></div>
             <div id="logo" class="opc"></div>
-        </div>    
+        </div>
     </div>
 
     <div id="menu_opcoes">
-    <a class="opc_menu" href="./">Home</a>
-    <a class="opc_menu" href="futsal/">Futsal</a>
-    <a class="opc_menu" href="volei/">Vôlei</a>    
-    <a class="opc_menu" href="torneios-campeonatos/">Torneios / Campeonatos</a>
-    <a class="opc_menu" href="../matriculas.html">Matrículas</a>
-    <a class="opc_menu" href="../contatos.html">Contatos</a>
+        <a class="opc_menu" href="./">Home</a>
+        <a class="opc_menu" href="futsal/">Futsal</a>
+        <a class="opc_menu" href="volei/">Vôlei</a>
+        <a class="opc_menu" href="torneios-campeonatos/">Eventos</a>
+        <a class="opc_menu" href="../matriculas.html">Matrículas</a>
     </div>
 
 
-    <div translate="no" id="cont_torneios">
+    <div id="cont_torneios">
 
-    <a href="torneios-campeonatos/copa_ralth_2025/"> 
-        <div class="cont" id="cont_1"> 
-            <div class="imgs_torneios" id="img_1">
-                
-            </div>
-            <div class="descr" id="desc_1">
-                Copa Ralth 2025
-            </div>
-        </div>
-    </a>   
+        <section class="mes_eventos">
+            <h2 class="titulo_mes">Janeiro 2025</h2>
 
-        <div class="cont" id="cont_2"> 
-            <div class="imgs_torneios" id="img_2">
-                
-            </div>
-            <div class="descr" id="desc_2">
-                Torneio ralth 
-            </div>
-        </div>
+            <div class="grid_eventos">
+                <a href="torneios-campeonatos/copa_ralth_2025/" class="card_evento">
+                    <div class="img_evento" id="img_1"></div>
+                    <div class="info_evento">Copa Ralth 2025</div>
+                </a>
 
-        <div class="cont" id="cont_3"> 
-            <div class="imgs_torneios" id="img_3">
-                
+                <div class="card_evento">
+                    <div class="img_evento" id="img_2"></div>
+                    <div class="info_evento">Torneio Ralth</div>
+                </div>
+
+                <div class="card_evento">
+                    <div class="img_evento" id="img_3"></div>
+                    <div class="info_evento">Copa Ralth 2024</div>
+                </div>
             </div>
-            <div class="descr" id="desc_3">
-                Copa ralth 2024
+        </section>
+
+                <section class="mes_eventos">
+            <h2 class="titulo_mes">Fevereiro 2025</h2>
+
+            <div class="grid_eventos">
+                <a href="torneios-campeonatos/copa_ralth_2025/" class="card_evento">
+                    <div class="img_evento" id="img_1"></div>
+                    <div class="info_evento">Copa Ralth 2025</div>
+                </a>
+
+                <div class="card_evento">
+                    <div class="img_evento" id="img_2"></div>
+                    <div class="info_evento">Torneio Ralth</div>
+                </div>
+
+                <div class="card_evento">
+                    <div class="img_evento" id="img_3"></div>
+                    <div class="info_evento">Copa Ralth 2024</div>
+                </div>
             </div>
-        </div>
+        </section>
 
     </div>
 
 
-        <footer id="rodape">
-            <div id="complemento1">
-                           
-                <div id="insta">
+<footer id="rodape">
+            <div class="centralizador" id="complemento1">
 
-                </div>
-                
-                <div>
-                    <a translate="no" class="link_rs" target="_blank" href="https://www.instagram.com/ralth.esportes/">@ralth.esportes</a>
-                </div>
-
+                <a class="link_rs" target="_blank" href="https://www.youtube.com">
+                    <div id="yout"></div>
+                </a>
             </div>
 
-            <div id="complemento">
-                <div id="wzp">
-
-                </div>
-                <div>
-                      <a class="link_rs" target="_blank" href="https://api.whatsapp.com/message/MHRHQD2SQACZJ1?autoload=1&app_absent=0">31 98813 - 7766</a>
-                </div>
+            <div class="centralizador" id="complemento">
+                <a class="link_rs" target="_blank" href="https://wa.me/c/553188137766">
+                    <div id="wzp"></div>
+                </a>
+            </div>
+            <div class="centralizador" id="complemento">
+                <a class="link_rs" target="_blank" href="https://www.instagram.com/ralth.esportes/">
+                    <div id="insta"></div>
+                </a>
+            </div>
+            <div class="centralizador" id="complemento">
+                <a class="link_rs" target="_blank" href="https://www.instagram.com/ralth.esportes/">
+                    <div id="face"></div>
+                </a>
             </div>
 
         </footer>
 
     <script src="js/torneios.js"></script>
-
+        </div>
 </body>
+
 </html>
