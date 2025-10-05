@@ -33,7 +33,7 @@ body {
 }
 
 #meio_topo {
-    background-color: rgb(4, 82, 145);
+    background-color: rgb(31, 84, 124);
     display: flex;
     flex-direction: row-reverse;
     justify-content: right;
@@ -311,6 +311,19 @@ body {
     text-align: center;
     padding: 40px;
     margin: 0.5%;
+}
+
+@media (max-width: 768px) {
+    #escolas { flex-direction: column; gap: 15px; margin-top: 5vh; }
+    .iten_escola { width: 85vw; height: 24vh; margin: 10px auto; padding: 0; }
+    #info_escola { width: 90%; margin: 10px auto; font-size: 0.9rem; }
+    .info-conteudo { flex-direction: column; gap: 15px; width: 100%; margin: 0; }
+    .info-conteudo div { width: 100%; }
+    .info-imagem { width: 100%; text-align: center; }
+    .imagem-escola { width: 80%; height: auto; }
+    #rodape { background-color: rgb(31, 84, 124); flex-direction: row; justify-content: flex-end; align-items: center; height: auto; padding: 10px 5%; font-size: 14px; }
+    #rodape div { margin: 0 5px; width: auto; }
+    #insta, #wzp, #yout, #face { width: 8vw; height: 5vh; background-size: contain; }
 }
 
 @media (min-width: 900px) {
