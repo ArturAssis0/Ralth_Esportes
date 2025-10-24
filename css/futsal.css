@@ -138,7 +138,7 @@ body {
 
 #rodape
 {
-    background-color: rgb(4, 82, 145);
+    background-color: rgb(31, 84, 124);
     margin-top: 25%;
     font-size: 15px;
     width: 100%;
@@ -276,11 +276,10 @@ body {
     background-position: center;
 }
 
-/* Área de informações da escola */
 #info_escola {
-    width: 88%;
+    width: 31%;
     padding: 10px;
-    margin-left: 17%;
+    margin-left: 33%;
     font-family: "Montserrat", sans-serif;
     text-align: justify;
     color: rgb(31, 84, 124); 
@@ -321,6 +320,7 @@ body {
 .info-imagem { width: 40vw; }
 .imagem-escola { margin-top: 8%; width: 35vw; height: 40vh; }
 
+/* ---------- MOBILE ---------- */
 @media (max-width: 768px) {
     #escolas { flex-direction: column; gap: 15px; margin-top: 5vh; }
     .iten_escola { width: 85vw; height: 24vh; margin: 10px auto; padding: 0; }
@@ -334,295 +334,19 @@ body {
     #insta, #wzp, #yout, #face { width: 8vw; height: 5vh; background-size: contain; }
 }
 
+/* ---------- DESKTOP (>=900px) ---------- */
 @media (min-width: 900px) {
-    html,
-    body {
-        margin-top: 2vh;
-        font-family: 'Montserrat';
-        background-color: transparent;
-    }
-
-    #main_div {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-    }
-
-    #conteudo-geral {
-        width: 110%;
-        padding: 5%;
-        border-radius: 5px;
-    }
-
-
-    #opcoes {
-        margin-top: 2%;
-        margin-bottom: 2%;
-        width: 100%;
-        height: 8vh;
-        text-align: center;
-        display: flex;
-        background-color: transparent;
-        z-index: 30;
-        justify-content: space-between;
-    }
-
-    #meio_topo {
-        background-color: rgb(31, 84, 124);
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 10vh;
-        padding: 0 10%;
-        margin-top: 2vh;
-    }
-
-    #menu_opcoes {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        background-color: rgb(31, 84, 124);
-        position: static;
-        width: auto;
-        max-height: none;
-        box-shadow:
-            3px 3px 3px rgba(117, 117, 117, 0.2),
-            -3px -3px 3px rgba(117, 117, 117, 0.2);
-        opacity: 1;
-        border-radius: 5px;
-        margin-top: 10vh;
-        margin-bottom: -5vh;
-        padding: 0;
-    }
-
-    #menu_opcoes a {
-        font-size: 25px;
-        font-weight: bold;
-        background-color: transparent;
-        padding: 10px 15px;
-        width: auto;
-        text-align: center;
-        margin: 2% 5px;
-        color: white;
-        transition: 0.3s;
-    }
-
-    #menu_opcoes a:hover {
-        background-color: rgb(19, 103, 172);
-        border-radius: 5px;
-    }
-
-    #logo {
-        height: 20vh;
-        background-image: url(../img/escudo_ralth_site.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-color: transparent;
-        z-index: 35;
-        margin: 2% 0;
-    }
-
-    #menu {
-        display: none;
-        /* Esconde o menu em desktop */
-    }
-
-    /* RODAPE */
-    #rodape {
-        background-color: rgb(31, 84, 124);
-        margin-top: 25%;
-        font-size: 25px;
-        width: 100%;
-        height: 10vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-        color: white;
-    }
-
-    #complemento1,
-    #complemento {
-        width: auto;
-    }
-
-    #insta {
-        width: 5vw;
-        height: 5vh;
-        background-position: center;
-        background-size: cover;
-        background-size: 100%;
-
-    }
-
-    #wzp {
-        width: 5vw;
-        height: 5vh;
-        background-size: contain;
-
-    }
-
-    #yout {
-        width: 5vw;
-        height: 5vh; /*AQUI */
-        background-size: contain;
-
-    }
-
-    #face {
-        width: 5vw;
-        height: 5vh;
-        background-size: contain;
-    }
-
-
-    /*outras coisas*/
-    .link_rs {
-        text-decoration: none;
-        color: #ffffff;
-    }
-
-
-    p {
-        font-weight: bolder;
-        text-indent: 30px;
-        text-align: justify;
-        color: rgb(255, 255, 255);
-        font-size: 1.1em;
-        line-height: 1.6;
-    }
-
-    h5 {
-        font-weight: bolder;
-        font-size: 18px;
-        color: rgb(31, 84, 124);
-        text-align: center;
-    }
-
-    h1 {
-        color: rgb(255, 255, 255);
-        margin-bottom: 30px;
-    }
-}
-
-.info-conteudo {
-    display: flex;
-    justify-content:flex-start;
-    gap: 10%;
-    width: 40vw;
-    margin-left: 46%;
-    color: rgb(31, 84, 124);
-}
-
-.info-conteudo div {
-    width: 20vw;
-}
-
-.info-imagem {
-    width: 40vw;
-}
-
-.imagem-escola {
-    margin-top: 8%;
-    width: 35vw;
-    height: 40vh;
-}
-
-/* -----------------------------------
-   Forçar layout igual ao do VÔLEI
-   (cole este bloco NO FINAL do CSS)
-   ----------------------------------- */
-
-#info_escola {
-    width: 31% !important;
-    padding: 10px;
-    margin-left: 17% !important;
-    font-family: "Montserrat", sans-serif;
-    text-align: justify;
-    color: rgb(31, 84, 124);
-    box-sizing: border-box;
-}
-
-#info_escola h2 {
-    color: rgb(31, 84, 124);
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-#info_escola p {
-    text-align: left;
-    font-size: 1rem;
-    line-height: 1.6;
-    margin: 8px 0;
-}
-
-/* ---------- INFO + IMAGEM (igual ao VÔLEI) ---------- */
-.info-conteudo {
-    display: flex !important;
-    justify-content: flex-start !important;
-    gap: 10% !important;
-    width: 40vw !important;
-    margin-left: -52% !important;
-    color: rgb(31, 84, 124);
-    align-items: flex-start;
-    box-sizing: border-box;
-}
-
-
-/* ---------- MOBILE (mantém comportamento responsivo do VÔLEI) ---------- */
-@media (max-width: 768px) {
-    #info_escola {
-        width: 90% !important;
-        margin: 10px auto !important;
-        font-size: 0.9rem;
-    }
-    .info-conteudo {
-        flex-direction: column !important;
-        gap: 15px !important;
-        width: 100% !important;
-        margin: 0 !important;
-    }
-    .info-conteudo > div {
-        width: 100% !important;
-    }
-    .info-imagem {
-        width: 100% !important;
-        text-align: center;
-    }
-    .imagem-escola {
-        width: 80% !important;
-        height: auto !important;
-    }
-}
-/* -----------------------------------
-   Correção para o texto comprimido
-   ----------------------------------- */
-
-#info_escola p,
-#info_escola div,
-.info-conteudo p,
-.info-conteudo div {
-    width: 100% !important;
-    max-width: 100% !important;
-    display: block !important;
-    text-align: justify;
-    white-space: normal !important;
-    line-height: 1.6;
-}
-
-/* Se ainda houver compressão causada por flex */
-.info-conteudo {
-    flex: 1 1 auto !important;
-    flex-wrap: wrap !important;
-}
-
-/* Garante que nada limite a largura dos filhos */
-.info-conteudo > * {
-    flex: 1 1 100% !important;
+    #opcoes { margin-top: 2%; margin-bottom: 2%; height: 8vh; justify-content: space-between; }
+    #meio_topo { background-color: rgb(31, 84, 124); flex-direction: row; justify-content: center; align-items: center; width: 100%; height: 10vh; padding: 0 10%; margin-top: 6vh; }
+    #menu_opcoes { display: flex; flex-direction: row; justify-content: space-between; background-color: rgb(31, 84, 124); position: static; width: auto; max-height: none; box-shadow: 3px 3px 3px rgba(117, 117, 117, 0.2), -3px -3px 3px rgba(117, 117, 117, 0.2); opacity: 1; border-radius: 5px; margin-top: 14vh; margin-bottom: -5vh; padding: 0; }
+    #menu_opcoes a { font-size: 25px; font-weight: bold; background-color: transparent; padding: 10px 15px; width: auto; text-align: center; margin: 2% 5px; color: white; transition: 0.3s; }
+    #menu_opcoes a:hover { background-color: rgb(19, 103, 172); border-radius: 5px; }
+    #logo { height: 20vh; background-size: contain; margin: 2% 0; }
+    #menu { display: none; }
+    #rodape { margin-top: 15%; font-size: 25px; height: 10vh; flex-direction: row; justify-content: right; color: white; }
+    #complemento1, #complemento { width: auto; }
+    #insta { width: 5vw; height: 5vh; background-size: 100%; }
+    #wzp  { width: 5vw; height: 5vh; background-size: contain; }
+    #yout { width: 5vw; height: 5vh; background-size: contain; }
+    #face { width: 5vw; height: 5vh; background-size: contain; }
 }
