@@ -1,6 +1,7 @@
 /* ---------- BASE ---------- */
 html,
 body {
+    overflow-x: hidden;
     margin: 0vw 0vh;
     font-family: 'Montserrat';
     background-color: transparent;
