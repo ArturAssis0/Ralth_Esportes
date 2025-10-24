@@ -694,3 +694,32 @@ h1
     p {
         font-size: 25px;
         line-height:
+
+
+
+
+
+
+        #logo
+{
+    margin-right: 5%;
+    margin-top: 3%;
+    height: 22vh;
+    background-image: url(../img/escudo_ralth_site.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-color: transparent;
+    z-index: 25;
+}
+
+
+#menu
+{
+    background-image: url(../img/img_menu.png);
+    background-size: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    cursor: pointer;
+}

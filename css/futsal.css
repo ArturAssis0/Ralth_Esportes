@@ -278,40 +278,48 @@ body {
 
 /* Área de informações da escola */
 #info_escola {
-    padding: 20px;
-    margin: 20px 0 20px 20px;
-    max-width: 600px;
+    width: 88%;
+    padding: 10px;
+    margin-left: 17%;
     font-family: "Montserrat", sans-serif;
-    text-align: left;               
-    transform: translateY(20px); 
+    text-align: justify;
+    color: rgb(31, 84, 124); 
 }
 
-/* Título (nome da escola) */
 #info_escola h2 {
     color: rgb(31, 84, 124);   
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
 
-/* Texto da descrição */
 #info_escola p {
-    text-align: left;
-    color: rgb(31, 84, 124);       
+    text-align: left;      
     font-size: 1rem;
     line-height: 1.6;   
     margin: 8px 0;
-    transition: ease-in-out(0.2,0.2);
 }
 
-
-.iten_escola
-{
+/* blocos das escolas */
+.iten_escola {
     width: 11vw;
     height: 10vh;
     text-align: center;
     padding: 40px;
     margin: 0.5%;
 }
+
+/* ---------- INFO + IMAGEM ---------- */
+.info-conteudo {
+    display: flex;
+    justify-content:flex-start;
+    gap: 10%;
+    width: 40vw;
+    margin-left: -52%;
+}
+
+.info-conteudo div { width: 20vw; }
+.info-imagem { width: 40vw; }
+.imagem-escola { margin-top: 8%; width: 35vw; height: 40vh; }
 
 @media (max-width: 768px) {
     #escolas { flex-direction: column; gap: 15px; margin-top: 5vh; }
@@ -524,4 +532,97 @@ body {
     margin-top: 8%;
     width: 35vw;
     height: 40vh;
+}
+
+/* -----------------------------------
+   Forçar layout igual ao do VÔLEI
+   (cole este bloco NO FINAL do CSS)
+   ----------------------------------- */
+
+#info_escola {
+    width: 31% !important;
+    padding: 10px;
+    margin-left: 17% !important;
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    color: rgb(31, 84, 124);
+    box-sizing: border-box;
+}
+
+#info_escola h2 {
+    color: rgb(31, 84, 124);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#info_escola p {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 8px 0;
+}
+
+/* ---------- INFO + IMAGEM (igual ao VÔLEI) ---------- */
+.info-conteudo {
+    display: flex !important;
+    justify-content: flex-start !important;
+    gap: 10% !important;
+    width: 40vw !important;
+    margin-left: -52% !important;
+    color: rgb(31, 84, 124);
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+
+/* ---------- MOBILE (mantém comportamento responsivo do VÔLEI) ---------- */
+@media (max-width: 768px) {
+    #info_escola {
+        width: 90% !important;
+        margin: 10px auto !important;
+        font-size: 0.9rem;
+    }
+    .info-conteudo {
+        flex-direction: column !important;
+        gap: 15px !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .info-conteudo > div {
+        width: 100% !important;
+    }
+    .info-imagem {
+        width: 100% !important;
+        text-align: center;
+    }
+    .imagem-escola {
+        width: 80% !important;
+        height: auto !important;
+    }
+}
+/* -----------------------------------
+   Correção para o texto comprimido
+   ----------------------------------- */
+
+#info_escola p,
+#info_escola div,
+.info-conteudo p,
+.info-conteudo div {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    text-align: justify;
+    white-space: normal !important;
+    line-height: 1.6;
+}
+
+/* Se ainda houver compressão causada por flex */
+.info-conteudo {
+    flex: 1 1 auto !important;
+    flex-wrap: wrap !important;
+}
+
+/* Garante que nada limite a largura dos filhos */
+.info-conteudo > * {
+    flex: 1 1 100% !important;
 }

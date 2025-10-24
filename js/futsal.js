@@ -169,7 +169,8 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>`;
             }
             infoSection.style.display = "block";
-
+            if (window.innerWidth <= 1068) {
+            infoSection.scrollIntoView({ behavior: "smooth", block: "start" })};
         });
     });
 });
