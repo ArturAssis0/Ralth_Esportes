@@ -285,7 +285,7 @@ body {
     color: rgb(31, 84, 124); 
 }
 
-.info-texto p {
+.info-texto div {
     text-align: justify;
 }
 
