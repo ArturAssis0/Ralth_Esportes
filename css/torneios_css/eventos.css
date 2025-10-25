@@ -554,7 +554,7 @@ html, body {
 }
 
 #btn-voltar:hover {
-    background-color: #444;
+    background-color: rgb(31, 84, 124);
     transform: scale(1.05);
 }
 
