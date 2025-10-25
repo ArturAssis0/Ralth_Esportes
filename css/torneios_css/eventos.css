@@ -188,6 +188,7 @@ html, body {
     padding: 8px;
     background-color: #eeeeee;
     border: solid 0.5px #d3d3d3;
+    border-radius: 5px;
 }
 
 .contents{
