@@ -723,3 +723,5 @@ h1
     background-color: transparent;
     cursor: pointer;
 }
+
+<button id="btn-voltar" onclick="history.back()">← Voltar</button>
