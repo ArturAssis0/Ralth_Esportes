@@ -243,6 +243,7 @@ body {
 
 /* ---------- DESKTOP (>=900px) ---------- */
 @media (min-width: 900px) {
+    html, body {overflow-x: hidden;}
     #opcoes { margin-top: 2%; margin-bottom: 2%; height: 8vh; justify-content: space-between; }
     #meio_topo { background-color: rgb(31, 84, 124); flex-direction: row; justify-content: center; align-items: center; width: 100%; height: 10vh; padding: 0 10%; margin-top: 6vh; }
     #menu_opcoes { display: flex; flex-direction: row; justify-content: space-between; background-color: rgb(31, 84, 124); position: static; width: auto; max-height: none; box-shadow: 3px 3px 3px rgba(117, 117, 117, 0.2), -3px -3px 3px rgba(117, 117, 117, 0.2); opacity: 1; border-radius: 5px; margin-top: 14vh; margin-bottom: -5vh; padding: 0; }
@@ -294,8 +295,8 @@ body {
     #complemento { width: auto; }
 
     /* ícones sociais desktop */
-    #insta {width: 7vw; height: 5vh; background-size: 200%; }
-    #wzp  {width: 7vw; height: 5vh; background-size: contain; }
-    #yout {width: 7vw; height: 5vh; background-size: contain; }
-    #face {width: 7vw; height: 5vh; background-size: contain; }
+    #insta{width: 10vw; height: 5vh; background-size: 200%; }
+    #wzp  {width: 10vw; height: 5vh; background-size: contain; }
+    #yout {width: 10vw; height: 5vh; background-size: contain; }
+    #face {width: 10vw; height: 5vh; background-size: contain; }
 }
