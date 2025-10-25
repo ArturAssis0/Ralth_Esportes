@@ -282,21 +282,15 @@ body {
     padding: 10px;
     margin-left: 33%;
     font-family: "Montserrat", sans-serif;
-    text-align: justify;
     color: rgb(31, 84, 124); 
 }
 
-#info_escola h2 {
-    color: rgb(31, 84, 124);   
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+#info_escola p {
+    text-align: justify;
 }
 
-#info_escola p {
-    text-align: left;      
-    font-size: 1rem;
-    line-height: 1.6;   
-    margin: 8px 0;
+#info_escola h2 {
+    text-align: left;
 }
 
 /* blocos das escolas */

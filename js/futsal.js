@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
             imagem: "img/CRESCER ESPORTES.png",
 
         },
-        item_4: {
+        item_6: {
             nome: "ESCOLA DE FUTSAL IHF",
 
             horarios1: `TURNO MANHÃ DIAS DA SEMANA: 3ª E 6ª FEIRA HORÁRIO: 11H30 ÀS 12H20 - SUB 08|10|12`,
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
             imagem: "img/CRESCER ESPORTES.png",
 
         },
-                item_6: {
+                item_4: {
             nome: "ESCOLA DE ESPORTES CONSTRUIR +",
 
             horarios1: `TURNO TARDE 2 DIAS DA SEMANA: 2ª E 4ª FEIRA HORÁRIO: 18H00 ÀS 18H50 - SUB 12`,
