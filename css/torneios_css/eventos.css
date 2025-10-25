@@ -332,6 +332,28 @@ html, body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
 
+    #btn-voltar {
+    position: fixed;
+    top: 5.5%;
+    left: 15px;
+    padding: 10px 20px;
+    background-color: rgb(31, 84, 124);
+    color: white;
+    border: solid white 1px;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+#btn-voltar:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
 }
         
 
@@ -509,10 +531,33 @@ html, body {
     #complemento { width: auto; }
 
     /* ícones sociais desktop */
-    #insta {margin-left: -8%;width: 6vw; height: 5vh; background-size: 100%; }
+    #insta {margin-left: -8%;width: 5vw; height: 5vh; background-size: 100%; }
     #wzp  {margin-left: -7%;width: 6vw; height: 5vh; background-size: contain; }
     #yout {margin-left: -8%; width: 6vw; height: 5vh; background-size: contain; }
     #face {margin-left: -8%;width: 6vw; height: 5vh; background-size: contain; }
+
+    #btn-voltar {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    padding: 10px 20px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+#btn-voltar:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
 }
 
 @media (max-width: 799px) {
