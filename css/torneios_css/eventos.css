@@ -82,7 +82,7 @@ html, body {
 
 #logo
 {
-    margin-right: 5%;
+    margin-right: 2.5%;
     margin-top: 3%;
     height: 22vh;
     background-image: url(../../img/escudo_ralth_site.png);
@@ -156,10 +156,10 @@ html, body {
     cursor: pointer;
 }
 
-#insta { background-image: url(../img/logo_instagram.png); background-size: 200%; }
-#wzp  { background-image: url(../img/esborso\ site\ ralth\ -\ ZAP\ 2.png); }
-#yout { background-image: url(../img/esborso\ site\ ralth\ -\ you.png); }
-#face { background-image: url(../img/esborso\ site\ ralth\ -\ face.png); }
+#insta { background-image: url(../../img/logo_instagram.png); background-size: 200%; }
+#wzp  { background-image: url(../../img/esborso\ site\ ralth\ -\ ZAP\ 2.png); }
+#yout { background-image: url(../../img/esborso\ site\ ralth\ -\ you.png); }
+#face { background-image: url(../../img/esborso\ site\ ralth\ -\ face.png); }
 .link_rs
 {
     text-decoration: none;
@@ -292,64 +292,48 @@ html, body {
             border-bottom: 2px solid #3498db;
             display: inline-block;
         }
-        
-/* ========== MEDIA QUERIES PARA TABLETS (768px - 1023px) ========== */
-@media (min-width: 768px) and (max-width: 1023px) {
-    /* TOPO */
-    #opcoes {
-        margin-top: 5%;
-        margin-bottom: 5%;
-        height: 10vh;
+
+@media (max-width: 767px) {
+    .content_geral{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    
-    #meio_topo {
-        height: 8vh;
+
+    #logo_evento {
+        height: 15rem;
+        width: 15rem;
     }
-    
-    #menu_opcoes {
-        width: 25vw;
-        top: 10vh;
-    }
-    
-    #logo {
-        height: 25vh;
-        background-size: 80%;
-    }
-    
-    /* CONTEÚDO */
+
     .opc_inf {
-        width: 70vw;
-        font-size: 22px;
-    }
-    
-    .contents {
-        width: 70%;
-    }
-    
-    #titulo {
-        font-size: 28px;
-        margin-bottom: 7%;
-    }
-    
-    #logo_copa_2025 {
-        width: 40vw;
-        height: 25vh;
-    }
-    
-    /* RODAPÉ */
-    #rodape {
-        margin-top: 15%;
-        font-size: 16px;
-        height: 8vh;
-    }
-    
-    #insta, #wzp {
-        height: 6vh;
-    }
+    width: 90%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 10px 0;
+    padding: 14px 0;
+    background-color: #ffffff;
+    border: 2px solid #1f547c;
+    border-radius: 8px;
+    color: #1f547c;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.25s ease-in-out;
+  }
+
+  .opc_inf:hover {
+    background-color: #1f547c;
+    color: #ffffff;
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
 }
+        
+
 
 /* ========== MEDIA QUERIES PARA DESKTOPS (1024px+) ========== */
-@media (min-width: 900px) {
+@media (min-width: 767px) {
     html, body {
         margin-top: 2vh; /* altera margem do root */
     }
@@ -419,6 +403,7 @@ html, body {
         background-size: contain;
         z-index: 35;
         margin: 2% 0;
+        margin-left: 2%;
     }
 
     #menu { display: none; } /* Esconde o menu hamburguer em desktop */
@@ -442,7 +427,7 @@ html, body {
 
 /* ========= ITENS ========= */
 #logo_evento {
-  width: 40%;
+  width: 35rem;
   height: 60vh;
   background-image: url(../../img/img_volei.jpg);
   background-position: center;
@@ -499,7 +484,12 @@ html, body {
   flex-direction: column;
   align-items: center;
 }
-      /* Rodapé */
+
+}
+
+@media (min-width: 800px)
+{
+          /* Rodapé */
 #rodape {
         width: 100vw;
         margin-top: 5%;
@@ -521,3 +511,25 @@ html, body {
     #face {margin-left: -8%;width: 5vw; height: 5vh; background-size: contain; }
 }
 
+@media (max-width: 799px) {
+          /* Rodapé */
+#rodape {
+        width: 100vw;
+        margin-top: 5%;
+        font-size: 25px;
+        height: 12vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        color: white;
+    }
+
+    #complemento1,
+    #complemento { width: auto; }
+
+    /* ícones sociais desktop */
+    #insta {width: 7vw; height: 5vh; background-size: 200%; }
+    #wzp  {width: 7vw; height: 5vh; background-size: contain; }
+    #yout {width: 7vw; height: 5vh; background-size: contain; }
+    #face {width: 7vw; height: 5vh; background-size: contain; }
+}

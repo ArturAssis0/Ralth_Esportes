@@ -222,12 +222,6 @@ html, body {
     .info_evento { font-size: 1rem; padding: 10px; }
 }
 
-/* Tablet */
-@media (min-width: 600px) and (max-width: 899px) {
-    #rodape { justify-content: center; }
-    #insta, #wzp, #yout, #face { width: 8vw; height: 6vh; }
-}
-
 /* Desktop */
 @media (min-width: 900px) {
     html, body {margin-top: 2vh; overflow-x: hidden;}
@@ -280,11 +274,52 @@ html, body {
 
     #logo { height: 20vh; background-size: contain; margin: 2% 0; z-index: 35; }
 
-    /* Rodapé */
-    #rodape { margin-top: 15%; font-size: 25px; height: 10vh; flex-direction: row; justify-content: right; color: white; }
-    #complemento1, #complemento { width: auto; }
-    #insta {margin-left: 50%; width: 3vw; height: 5vh; background-size: 165%; }
-    #wzp  {margin-left: 50%; width: 3vw; height: 5vh; background-size: contain; }
-    #yout {margin-left: 50%; width: 3vw; height: 5vh; background-size: contain; }
-    #face {margin-left: 51%; width: 3vw; height: 5vh; background-size: contain; }
+
+}
+
+@media (min-width: 800px)
+{
+          /* Rodapé */
+#rodape {
+        width: 100vw;
+        margin-top: 5%;
+        font-size: 25px;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        color: white;
+    }
+
+    #complemento1,
+    #complemento { width: auto; }
+
+    /* ícones sociais desktop */
+    #insta {margin-left: -8%;width: 5vw; height: 5vh; background-size: 100%; }
+    #wzp  {margin-left: -7%;width: 5vw; height: 5vh; background-size: contain; }
+    #yout {margin-left: -8%; width: 5vw; height: 5vh; background-size: contain; }
+    #face {margin-left: -8%;width: 5vw; height: 5vh; background-size: contain; }
+}
+
+@media (max-width: 799px) {
+          /* Rodapé */
+#rodape {
+        width: 100vw;
+        margin-top: 5%;
+        font-size: 25px;
+        height: 12vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        color: white;
+    }
+
+    #complemento1,
+    #complemento { width: auto; }
+
+    /* ícones sociais desktop */
+    #insta {width: 7vw; height: 5vh; background-size: 200%; }
+    #wzp  {width: 7vw; height: 5vh; background-size: contain; }
+    #yout {width: 7vw; height: 5vh; background-size: contain; }
+    #face {width: 7vw; height: 5vh; background-size: contain; }
 }
