@@ -178,7 +178,7 @@ html, body {
 
 .grid_eventos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, 31%);
     gap: 1.8rem;
 }
 
@@ -282,8 +282,7 @@ html, body {
 
 }
 
-@media (min-width: 800px)
-{
+@media (min-width: 800px) {
           /* Rodapé */
 #rodape {
         width: 100vw;
@@ -307,7 +306,15 @@ html, body {
 }
 
 @media (max-width: 799px) {
-          /* Rodapé */
+          
+    .grid_eventos {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 0.9fr));
+    gap: 1.8rem;
+}
+    
+    /* Rodapé */
 #rodape {
         width: 100vw;
         margin-top: 5%;
