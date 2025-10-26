@@ -333,10 +333,8 @@ html, body {
   }
 
     #btn-voltar {
-    position: fixed;
-    top: 5.5%;
-    left: 15px;
-    padding: 10px 20px;
+    height: 4vh;
+    width: 30%;
     background-color: rgb(31, 84, 124);
     color: white;
     border: solid white 1px;
@@ -350,7 +348,7 @@ html, body {
 }
 
 #btn-voltar:hover {
-    background-color: #444;
+    background-color: rgb(19, 103, 172);
     transform: scale(1.05);
 }
 
