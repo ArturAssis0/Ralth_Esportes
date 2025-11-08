@@ -131,11 +131,35 @@ body {
     background-position: center;
 }
 
-.img1 { background-image: url(img/carrossel_1.jpg); background-size: cover; background-position: center; }
-.img2 { background-image: url(img/carrossel_2.jpg); background-size: cover; background-position: center; }
-.img3 { background-image: url(img/carrossel_3.jpg); background-size: cover; background-position: center; }
-.img4 { background-image: url(img/carrossel_4.jpg); background-size: cover; background-position: center; }
-.img5 { /* caso use img5 no HTML */ background-size: cover; background-position: center; }
+.img1 {
+    background-image: url(img/carrossel_1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img2 {
+    background-image: url(img/carrossel_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img3 {
+    background-image: url(img/carrossel_3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img4 {
+    background-image: url(img/carrossel_4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img5 {
+    /* caso use img5 no HTML */
+    background-size: cover;
+    background-position: center;
+}
 
 /* botões de navegação (mantido apenas uma vez) */
 .anterior,
@@ -153,52 +177,52 @@ body {
     margin-left: 6%;
 }
 
-#conteudo h1 { text-align: left; }
-
-/* RODAPE */
-#rodape {
-    background-color: rgb(31, 84, 124);
-    margin-top: 10%;
-    font-size: 15px;
-    width: 100%;
-    height: 6vh;
-    display: flex;
-    color: white;
+#conteudo h1 {
+    text-align: left;
 }
 
-#complemento1 {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-}
 
-#complemento {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: right;
-}
 
 /* ícones sociais (base) */
-#insta, #wzp, #yout, #face {
-    width: 15%;
-    height: 5vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 90%;
-    cursor: pointer;
-}
+    #yout {
+        background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg');
+    }
 
-/* imagens específicas */
-#insta { background-image: url(img/logo_instagram.png); background-size: 200%; }
-#wzp  { background-image: url(img/esborso\ site\ ralth\ -\ ZAP\ 2.png); }
-#yout { background-image: url(img/esborso\ site\ ralth\ -\ you.png); }
-#face { background-image: url(img/esborso\ site\ ralth\ -\ face.png); }
+    #wzp {
+        background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg');
+    }
+
+    #insta {
+        background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg');
+    }
+
+    #face {
+        background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg');
+    }
+
+    /* Cor branca nos SVGs (invert + brilho) */
+    #yout,
+    #wzp,
+    #insta,
+    #face {
+        filter: invert(1) brightness(2);
+    }
+
+    /* Hover nas redes sociais */
+    #yout:hover,
+    #wzp:hover,
+    #insta:hover,
+    #face:hover {
+        transform: scale(1.1);
+        background-color: #3b1c1c0e;
+        border-color: #00000060;
+    }
 
 /* outras coisas */
-.link_rs { text-decoration: none; color: #ffffff; }
+.link_rs {
+    text-decoration: none;
+    color: #ffffff;
+}
 
 .opc_menu {
     text-decoration: none;
@@ -231,11 +255,118 @@ h1 {
     color: rgb(0, 0, 128);
 }
 
+/* ---------------------------------------------------- */
+/* === ESTILOS DO RODAPÉ (VERSÃO DESKTOP PADRÃO) === */
+/* ---------------------------------------------------- */
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: rgb(31, 84, 124);
+    color: #f5f5f5;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+;
+}
+
+.footer-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    font-size: 1rem;
+    color: #ffffff;
+
+}
+
+.footer-col {
+    min-width: 250px;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* === ÍCONES DE CONTATO === */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.contato-icone {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.contato-icone i {
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.contato-icone:hover {
+    transform: scale(1.1);
+}
+
+/* === REDES SOCIAIS === */
+
+.footer-socials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 10px;
+    justify-items: center;
+}
+
+.icone-social {
+    width: 55px;
+    height: 55px;
+    background-color: #46414115;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #9b9b9b25;
+    transition: all 0.3s ease;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Cor branca nos SVGs (invert + brilho) */
+/* As regras de imagem de fundo e filtro já estão definidas acima, mas foram repetidas na mídia query original, vou manter a consistência e adicionar apenas as regras do footer mobile. */
+
+
+/* ---------------------------------------------------- */
 /* ---------- DESKTOP (>=900px) ---------- */
+/* ---------------------------------------------------- */
 @media (min-width: 900px) {
 
-    html, body {
-        margin-top: 2vh; /* altera margem do root */
+    html,
+    body {
+        margin-top: 2vh;
+        /* altera margem do root */
     }
 
     #conteudo-geral {
@@ -305,7 +436,11 @@ h1 {
         margin: 2% 0;
     }
 
-    #menu { display: none; } /* Esconde o menu hamburguer em desktop */
+    #menu {
+        display: none;
+    }
+
+    /* Esconde o menu hamburguer em desktop */
 
     /* CARROSSEL */
     .carrossel {
@@ -319,7 +454,9 @@ h1 {
         margin-bottom: 5%;
     }
 
-    .item { height: 60vh; }
+    .item {
+        height: 60vh;
+    }
 
     /* CONTEUDO */
     #conteudo {
@@ -330,7 +467,9 @@ h1 {
         margin: 2% auto;
     }
 
-    #conteudo h5 { font-size: 28px; }
+    #conteudo h5 {
+        font-size: 28px;
+    }
 
     #conteudo p {
         margin-left: 10%;
@@ -366,49 +505,202 @@ h1 {
     }
 }
 
-@media (min-width: 800px)
-{
-          /* Rodapé */
-#rodape {
-        width: 100vw;
-        margin-top: 5%;
-        font-size: 25px;
-        height: 10vh;
+/* ---------------------------------------------------- */
+/* ---------- DESKTOP INTERMEDIÁRIO (>=800px) ---------- */
+/* ---------------------------------------------------- */
+@media (min-width: 800px) {
+
+    /* === FOOTER LAYOUT === */
+    .footer-container {
         display: flex;
-        flex-direction: row;
-        justify-content: right;
-        color: white;
+        flex-wrap: wrap;
+        width: 100vw;
+        justify-content: space-around;
+        padding: 40px 20px;
+        background-color: rgb(31, 84, 124);
+        color: #f5f5f5;
+        font-family: "Montserrat", sans-serif;
     }
 
-    #complemento1,
-    #complemento { width: auto; }
+    .footer-title {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
 
-    /* ícones sociais desktop */
-    #insta {margin-left: -8%;width: 5vw; height: 5vh; background-size: 100%; }
-    #wzp  {margin-left: -7%;width: 5vw; height: 5vh; background-size: contain; }
-    #yout {margin-left: -8%; width: 5vw; height: 5vh; background-size: contain; }
-    #face {margin-left: -8%;width: 5vw; height: 5vh; background-size: contain; }
+    .footer-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .footer-text {
+        font-size: 1rem;
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    .footer-col {
+        min-width: 250px;
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* === ÍCONES DE CONTATO === */
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .contato-icone {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+    }
+
+    .contato-icone i {
+        color: #fff;
+        font-size: 1.3rem;
+    }
+
+    .contato-icone:hover {
+        transform: scale(1.1);
+    }
+
+    /* === REDES SOCIAIS === */
+
+    .footer-socials {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin-top: 10px;
+        justify-items: center;
+    }
+
+    .icone-social {
+        width: 55px;
+        height: 55px;
+        background-color: #46414115;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1.5px solid #9b9b9b25;
+        transition: all 0.3s ease;
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    /* Ícones de redes sociais (SVGs externos) */
+    #yout {
+        background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg');
+    }
+
+    #wzp {
+        background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg');
+    }
+
+    #insta {
+        background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg');
+    }
+
+    #face {
+        background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg');
+    }
+
+    /* Cor branca nos SVGs (invert + brilho) */
+    #yout,
+    #wzp,
+    #insta,
+    #face {
+        filter: invert(1) brightness(2);
+    }
+
+    /* Hover nas redes sociais */
+    #yout:hover,
+    #wzp:hover,
+    #insta:hover,
+    #face:hover {
+        transform: scale(1.1);
+        background-color: #bdbaba15;
+        border-color: #1615156b;
+    }
+
 }
 
+/* ---------------------------------------------------- */
+/* ---------- MOBILE (<=799px) - AJUSTES DE RODAPÉ ---------- */
+/* ---------------------------------------------------- */
 @media (max-width: 799px) {
-          /* Rodapé */
-#rodape {
-        width: 100vw;
-        margin-top: 5%;
-        font-size: 25px;
-        height: 12vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        color: white;
+
+    /* Redefinindo o container para empilhar itens e centralizá-los */
+    .footer-container {
+        flex-direction: column; /* Empilha as colunas verticalmente */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        text-align: center; /* Centraliza o texto dentro do container */
+        padding: 30px 15px; /* Reduz o padding */
+        gap: 30px; /* Adiciona espaçamento entre as colunas */
     }
 
-    #complemento1,
-    #complemento { width: auto; }
+    /* Ajuste para as colunas do rodapé */
+    .footer-col {
+        min-width: 90%; /* Ocupa quase a largura total */
+        max-width: 400px; /* Limita a largura em telas maiores que 799px */
+        margin: 0 auto; /* Centraliza a coluna */
+    }
 
-    /* ícones sociais desktop */
-    #insta{width: 10vw; height: 5vh; background-size: 200%; }
-    #wzp  {width: 10vw; height: 5vh; background-size: contain; }
-    #yout {width: 10vw; height: 5vh; background-size: contain; }
-    #face {width: 10vw; height: 5vh; background-size: contain; }
+    /* Centralizando títulos e subtítulos */
+    .footer-title,
+    .footer-subtitle {
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    /* Centralizando o texto de contato */
+    .footer-text {
+        text-align: center;
+    }
+    
+    /* Centralizando o bloco de contato */
+    .footer-contact {
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Ícones de contato - manter o layout flex para o ícone e texto */
+    .contact-item {
+        justify-content: center; /* Centraliza ícone e texto */
+        gap: 8px; /* Reduz o espaço entre ícone e texto */
+    }
+
+    /* Redes Sociais - Altera para 2 colunas para otimizar o espaço */
+    .footer-socials {
+        grid-template-columns: repeat(4, 1fr); /* Mantendo 4 colunas, mas ajustando o tamanho do ícone */
+        gap: 10px;
+        justify-content: center;
+        width: 100%;
+        max-width: 300px; /* Limita a largura para os ícones não ficarem muito grandes */
+        margin: 10px auto 0;
+    }
+
+    .icone-social {
+        width: 45px; /* Reduz o tamanho do ícone */
+        height: 45px; /* Reduz o tamanho do ícone */
+        background-size: 50%; /* Ajusta o tamanho do SVG dentro do círculo */
+    }
 }
