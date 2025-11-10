@@ -17,6 +17,21 @@ body {
     background-color: transparent;
 }
 
+#conteudo-geral {
+    text-align: center;
+}
+
+/* ---------- CABEÇALHO ---------- */
+#meio_topo {
+    background-color: rgb(31, 84, 124);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: center;
+    width: 100vw;
+    height: 6vh;
+}
+
 #opcoes {
     margin-top: 10%;
     margin-bottom: 10%;
@@ -27,20 +42,6 @@ body {
     display: flex;
     background-color: transparent;
     z-index: 30;
-}
-
-#conteudo-geral {
-    text-align: center;
-}
-
-#meio_topo {
-    background-color: rgb(31, 84, 124);
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: right;
-    align-items: center;
-    width: 100vw;
-    height: 6vh;
 }
 
 #menu_opcoes {
@@ -109,7 +110,7 @@ body {
     cursor: pointer;
 }
 
-/* CARROSSEL */
+/* ---------- CARROSSEL ---------- */
 .carrossel {
     width: 100%;
     max-width: 100vw;
@@ -167,7 +168,7 @@ body {
     color: white;
 }
 
-/* CONTEUDO */
+/* ---------- CONTEÚDO ---------- */
 #conteudo {
     background-color: rgb(31, 84, 124);
     width: 80%;
@@ -181,44 +182,42 @@ body {
     text-align: left;
 }
 
+/* ---------- ÍCONES SOCIAIS ---------- */
+#yout {
+    background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg');
+}
 
+#wzp {
+    background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg');
+}
 
-/* ícones sociais (base) */
-    #yout {
-        background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg');
-    }
+#insta {
+    background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg');
+}
 
-    #wzp {
-        background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg');
-    }
+#face {
+    background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg');
+}
 
-    #insta {
-        background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg');
-    }
+/* Cor branca nos SVGs (invert + brilho) */
+#yout,
+#wzp,
+#insta,
+#face {
+    filter: invert(1) brightness(2);
+}
 
-    #face {
-        background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg');
-    }
+/* Hover nas redes sociais */
+#yout:hover,
+#wzp:hover,
+#insta:hover,
+#face:hover {
+    transform: scale(1.1);
+    background-color: #3b1c1c0e;
+    border-color: #00000060;
+}
 
-    /* Cor branca nos SVGs (invert + brilho) */
-    #yout,
-    #wzp,
-    #insta,
-    #face {
-        filter: invert(1) brightness(2);
-    }
-
-    /* Hover nas redes sociais */
-    #yout:hover,
-    #wzp:hover,
-    #insta:hover,
-    #face:hover {
-        transform: scale(1.1);
-        background-color: #3b1c1c0e;
-        border-color: #00000060;
-    }
-
-/* outras coisas */
+/* ---------- LINKS E TEXTOS ---------- */
 .link_rs {
     text-decoration: none;
     color: #ffffff;
@@ -258,7 +257,6 @@ h1 {
 /* ---------------------------------------------------- */
 /* === ESTILOS DO RODAPÉ (VERSÃO DESKTOP PADRÃO) === */
 /* ---------------------------------------------------- */
-
 .footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -273,7 +271,6 @@ h1 {
 .footer-title {
     font-size: 1.5rem;
     margin-bottom: 10px;
-;
 }
 
 .footer-subtitle {
@@ -284,7 +281,6 @@ h1 {
 .footer-text {
     font-size: 1rem;
     color: #ffffff;
-
 }
 
 .footer-col {
@@ -307,7 +303,6 @@ h1 {
 footer a {
     text-decoration: none;
     color: #fff;
-
 }
 
 .contato-icone {
@@ -330,7 +325,6 @@ footer a {
 }
 
 /* === REDES SOCIAIS === */
-
 .footer-socials {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -354,19 +348,13 @@ footer a {
     background-position: center;
 }
 
-/* Cor branca nos SVGs (invert + brilho) */
-/* As regras de imagem de fundo e filtro já estão definidas acima, mas foram repetidas na mídia query original, vou manter a consistência e adicionar apenas as regras do footer mobile. */
-
-
 /* ---------------------------------------------------- */
 /* ---------- DESKTOP (>=900px) ---------- */
 /* ---------------------------------------------------- */
 @media (min-width: 900px) {
-
     html,
     body {
         margin-top: 2vh;
-        /* altera margem do root */
     }
 
     #conteudo-geral {
@@ -440,9 +428,6 @@ footer a {
         display: none;
     }
 
-    /* Esconde o menu hamburguer em desktop */
-
-    /* CARROSSEL */
     .carrossel {
         max-width: 1200px;
         height: 40vh;
@@ -458,7 +443,6 @@ footer a {
         height: 60vh;
     }
 
-    /* CONTEUDO */
     #conteudo {
         background-color: rgb(31, 84, 124);
         width: 55%;
@@ -509,8 +493,6 @@ footer a {
 /* ---------- DESKTOP INTERMEDIÁRIO (>=800px) ---------- */
 /* ---------------------------------------------------- */
 @media (min-width: 800px) {
-
-    /* === FOOTER LAYOUT === */
     .footer-container {
         display: flex;
         flex-wrap: wrap;
@@ -549,7 +531,6 @@ footer a {
         gap: 12px;
     }
 
-    /* === ÍCONES DE CONTATO === */
     .contact-item {
         display: flex;
         align-items: center;
@@ -581,8 +562,6 @@ footer a {
         transform: scale(1.1);
     }
 
-    /* === REDES SOCIAIS === */
-
     .footer-socials {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -606,7 +585,6 @@ footer a {
         background-position: center;
     }
 
-    /* Ícones de redes sociais (SVGs externos) */
     #yout {
         background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg');
     }
@@ -623,7 +601,6 @@ footer a {
         background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg');
     }
 
-    /* Cor branca nos SVGs (invert + brilho) */
     #yout,
     #wzp,
     #insta,
@@ -631,7 +608,6 @@ footer a {
         filter: invert(1) brightness(2);
     }
 
-    /* Hover nas redes sociais */
     #yout:hover,
     #wzp:hover,
     #insta:hover,
@@ -640,67 +616,58 @@ footer a {
         background-color: #bdbaba15;
         border-color: #1615156b;
     }
-
 }
 
 /* ---------------------------------------------------- */
-/* ---------- MOBILE (<=799px) - AJUSTES DE RODAPÉ ---------- */
+/* ---------- MOBILE (<=799px) ---------- */
 /* ---------------------------------------------------- */
 @media (max-width: 799px) {
-
-    /* Redefinindo o container para empilhar itens e centralizá-los */
     .footer-container {
-        flex-direction: column; /* Empilha as colunas verticalmente */
-        align-items: center; /* Centraliza os itens horizontalmente */
-        text-align: center; /* Centraliza o texto dentro do container */
-        padding: 30px 15px; /* Reduz o padding */
-        gap: 30px; /* Adiciona espaçamento entre as colunas */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 15px;
+        gap: 30px;
     }
 
-    /* Ajuste para as colunas do rodapé */
     .footer-col {
-        min-width: 90%; /* Ocupa quase a largura total */
-        max-width: 400px; /* Limita a largura em telas maiores que 799px */
-        margin: 0 auto; /* Centraliza a coluna */
+        min-width: 90%;
+        max-width: 400px;
+        margin: 0 auto;
     }
 
-    /* Centralizando títulos e subtítulos */
     .footer-title,
     .footer-subtitle {
         text-align: center;
         margin-bottom: 8px;
     }
 
-    /* Centralizando o texto de contato */
     .footer-text {
         text-align: center;
     }
-    
-    /* Centralizando o bloco de contato */
+
     .footer-contact {
         align-items: center;
         gap: 10px;
     }
 
-    /* Ícones de contato - manter o layout flex para o ícone e texto */
     .contact-item {
-        justify-content: center; /* Centraliza ícone e texto */
-        gap: 8px; /* Reduz o espaço entre ícone e texto */
+        justify-content: center;
+        gap: 8px;
     }
 
-    /* Redes Sociais - Altera para 2 colunas para otimizar o espaço */
     .footer-socials {
-        grid-template-columns: repeat(4, 1fr); /* Mantendo 4 colunas, mas ajustando o tamanho do ícone */
+        grid-template-columns: repeat(4, 1fr);
         gap: 10px;
         justify-content: center;
         width: 100%;
-        max-width: 300px; /* Limita a largura para os ícones não ficarem muito grandes */
+        max-width: 300px;
         margin: 10px auto 0;
     }
 
     .icone-social {
-        width: 45px; /* Reduz o tamanho do ícone */
-        height: 45px; /* Reduz o tamanho do ícone */
-        background-size: 50%; /* Ajusta o tamanho do SVG dentro do círculo */
+        width: 45px;
+        height: 45px;
+        background-size: 50%;
     }
 }
