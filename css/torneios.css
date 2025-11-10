@@ -143,7 +143,7 @@ html, body {
 .grid_eventos a { text-decoration: none; color: rgb(31, 84, 124); }
 
 .img_evento {
-    width: 100%;
+    width: 80%;
     aspect-ratio: 1 / 1;
     background-size: cover;
     background-position: center;
@@ -180,9 +180,14 @@ html, body {
 /* ---------- MEDIA QUERIES ---------- */
 
 /* Mobile */
-@media (max-width: 600px) {
+@media (max-width: 760px) {
     .titulo_mes { font-size: 1.4rem; text-align: left; }
-    .info_evento { font-size: 1rem; padding: 10px; }
+    .info_evento { font-size: 1.3rem; padding: 10px; margin-right: 15%;}
+    .grid_eventos {
+        grid-template-columns: 110%;
+        justify-content: center;
+        margin-left: 15%;
+    }
 }
 
 /* Desktop */
