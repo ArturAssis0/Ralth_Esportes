@@ -21,25 +21,15 @@ body {
     text-align: center;
 }
 
-/* ---------- CABEÇALHO ---------- */
-#meio_topo {
-    background-color: rgb(31, 84, 124);
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: right;
-    align-items: center;
-    width: 100vw;
-    height: 6vh;
-}
 
 #opcoes {
-    margin-top: 10%;
-    margin-bottom: 10%;
+        margin-bottom: 10%;
     width: 100%;
     height: 8vh;
     max-width: 100vw;
     text-align: center;
     display: flex;
+    flex-direction: row;
     background-color: transparent;
     z-index: 30;
 }
@@ -52,16 +42,12 @@ body {
     align-items: center;
     background-color: white;
     padding: 10px;
-    position: absolute;
-    top: 8vh;
-    right: 0;
     width: 32vw;
     text-align: center;
     transition: all 0.5s ease-out;
     box-sizing: border-box;
     max-height: 0;
     opacity: 0;
-    border: solid 1px rgb(216, 216, 216);
     margin-top: 5.5%;
     margin-bottom: 5%;
     z-index: 25;
@@ -101,15 +87,6 @@ body {
     z-index: 35;
 }
 
-#menu {
-    background-image: url(img/img_menu.png);
-    background-size: 35%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    cursor: pointer;
-}
-
 /* ---------- CARROSSEL ---------- */
 .carrossel {
     width: 100%;
@@ -119,10 +96,6 @@ body {
     position: relative;
     overflow: hidden;
     z-index: 1;
-}
-
-.conteudo {
-    display: flex;
 }
 
 .item {
@@ -157,12 +130,10 @@ body {
 }
 
 .img5 {
-    /* caso use img5 no HTML */
     background-size: cover;
     background-position: center;
 }
 
-/* botões de navegação (mantido apenas uma vez) */
 .anterior,
 .proximo {
     color: white;
@@ -170,16 +141,11 @@ body {
 
 /* ---------- CONTEÚDO ---------- */
 #conteudo {
-    background-color: rgb(31, 84, 124);
     width: 80%;
     border-radius: 6px;
     padding: 18px;
     margin-top: 5%;
     margin-left: 6%;
-}
-
-#conteudo h1 {
-    text-align: left;
 }
 
 /* ---------- ÍCONES SOCIAIS ---------- */
@@ -199,7 +165,6 @@ body {
     background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg');
 }
 
-/* Cor branca nos SVGs (invert + brilho) */
 #yout,
 #wzp,
 #insta,
@@ -207,7 +172,6 @@ body {
     filter: invert(1) brightness(2);
 }
 
-/* Hover nas redes sociais */
 #yout:hover,
 #wzp:hover,
 #insta:hover,
@@ -237,21 +201,11 @@ body {
     padding: 10px;
 }
 
-p {
-    font-weight: bolder;
-    text-align: justify;
-    color: rgb(255, 255, 255);
-}
-
 h5 {
     font-weight: bolder;
     font-size: 16px;
     color: rgb(31, 84, 124);
     text-align: center;
-}
-
-h1 {
-    color: rgb(0, 0, 128);
 }
 
 /* ---------------------------------------------------- */
@@ -352,52 +306,68 @@ footer a {
 /* ---------- DESKTOP (>=900px) ---------- */
 /* ---------------------------------------------------- */
 @media (min-width: 900px) {
-    html,
-    body {
-        margin-top: 2vh;
-    }
 
     #conteudo-geral {
         width: 110%;
         padding: 5%;
+        margin-top: 6vh;
         border-radius: 5px;
     }
 
+    .conteudo-saudacao {
+        margin-top: -11vh;
+        height: 22vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(to bottom, transparent 0%, rgba(12, 47, 73, 0.6) 100%) rgb(31, 84, 124);
+    }
+
+    .conteudo-saudacao h1 {
+        font-size: 3rem;
+    }
+
+    .conteudo-saudacao p {
+        font-size: 1.5rem;
+    }
+
     #opcoes {
-        margin-top: 2%;
+        margin-top: 0vh;
         margin-bottom: 2%;
-        height: 8vh;
+        height: 18vh;
+        background-color: rgb(31, 84, 124);
+        border: solid 30px rgb(31, 84, 124);
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
 
     #meio_topo {
         background-color: rgb(31, 84, 124);
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        /* corrigido */
+        justify-content: space-between;
+        /* corrigido */
         align-items: center;
         width: 100%;
-        height: 10vh;
-        padding: 0 10%;
-        margin-top: 2vh;
+        height: 17vh;
+        padding: 0 10px;
+        /* corrigido */
     }
 
     #menu_opcoes {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         background-color: rgb(31, 84, 124);
-        position: static;
-        width: auto;
+        border: solid 5px rgb(31, 84, 124);
+        width: 100%;
         max-height: none;
-        box-shadow:
-            3px 3px 3px rgba(117, 117, 117, 0.2),
-            -3px -3px 3px rgba(117, 117, 117, 0.2);
+        height: 16vh;
         opacity: 1;
-        border-radius: 5px;
         margin-top: 10vh;
-        margin-bottom: -5vh;
-        padding: 0;
     }
 
     #menu_opcoes a {
@@ -410,18 +380,26 @@ footer a {
         margin: 2% 5px;
         color: white;
         transition: 0.3s;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
     }
 
     #menu_opcoes a:hover {
-        background-color: rgb(19, 103, 172);
-        border-radius: 5px;
+        background-color: rgb(31, 84, 124);
+        color: rgb(161, 187, 207);
+    }
+
+    #home {
+        border-bottom: solid white;
     }
 
     #logo {
+        margin: 0;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
         height: 20vh;
         background-size: contain;
         z-index: 35;
-        margin: 2% 0;
     }
 
     #menu {
@@ -429,13 +407,13 @@ footer a {
     }
 
     .carrossel {
-        max-width: 1200px;
-        height: 40vh;
+        height: 67vh;
         position: relative;
         overflow: hidden;
         z-index: 1;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-top: -20vh;
         margin-bottom: 5%;
     }
 
@@ -444,7 +422,6 @@ footer a {
     }
 
     #conteudo {
-        background-color: rgb(31, 84, 124);
         width: 55%;
         border-radius: 10px;
         padding: 20px;
@@ -452,10 +429,11 @@ footer a {
     }
 
     #conteudo h5 {
-        font-size: 28px;
+        font-size: 34px;
     }
 
     #conteudo p {
+        color: rgb(31, 84, 124);
         margin-left: 10%;
         text-align: justify;
         width: 80%;
@@ -487,6 +465,77 @@ footer a {
         color: rgb(255, 255, 255);
         margin-bottom: 30px;
     }
+
+    /* ===== Bloco valores (ícones circulares + título) ===== */
+    :root {
+        --cor-primaria: rgb(31, 84, 124);
+        /* cor do texto (ajuste conforme fundo) */
+        --sombra: 0 6px 14px rgba(0, 0, 0, 0.15);
+        --icone: rgb(255, 255, 255);
+    }
+
+    /* Container geral */
+    .valores {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        justify-content: center;
+        /* centro por padrão */
+        align-items: flex-start;
+        padding: 18px 10px;
+        margin: 16px 0;
+        color: var(--texto);
+    }
+
+    /* Cada item */
+    .valor {
+        width: 120px;
+        min-width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+
+    /* Círculo que contém o SVG */
+    .icone {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        background: var(--cor-primaria);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: var(--sombra);
+        transition: transform .12s ease, box-shadow .18s ease;
+    }
+
+    /* SVG adaptável - usa currentColor para preencher */
+    .icone svg {
+        width: 36px;
+        height: 36px;
+        display: block;
+        fill: var(--icone);
+        /* cor do desenho dentro do círculo */
+    }
+
+    /* Título (texto embaixo) */
+    .valor .titulo {
+        font-size: 0.86rem;
+        font-weight: 700;
+        letter-spacing: .4px;
+        color: var(--cor-primaria);
+        padding: 0 4px;
+    }
+
+    /* Hover: sobe ligeiro e muda sombra */
+    .valor:hover .icone {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22);
+    }
+
+
 }
 
 /* ---------------------------------------------------- */
@@ -622,6 +671,62 @@ footer a {
 /* ---------- MOBILE (<=799px) ---------- */
 /* ---------------------------------------------------- */
 @media (max-width: 799px) {
+    #meio_topo {
+        background: linear-gradient(to bottom, transparent 0%, rgba(12, 47, 73, 0.6) 100%) rgb(31, 84, 124);
+        display: flex;
+        flex-direction: row;
+        /* corrigido */
+        justify-content: space-between;
+        /* corrigido */
+        align-items: center;
+        width: 100%;
+        height: 17vh;
+        padding: 0 10px;
+        /* corrigido */
+    }
+    
+    #menu_opcoes {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(15, 63, 100);
+        padding: 10px;
+        position: absolute;
+        top: 14vh;
+        right: 0;
+        width: 100vw;
+        text-align: center;
+        transition: all 0.5s ease-out;
+        box-sizing: border-box;
+        max-height: 0;
+        opacity: 0;
+        margin-top: 5.5%;
+        margin-bottom: 5%;
+        z-index: 25;
+    }
+
+    #menu_opcoes a {
+        display: inline-block;
+        background-color: rgb(15, 63, 100);
+        color: white;
+        border-bottom: solid white;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        width: 35%;
+    }
+
+    #menu {
+    background-image: url(img/img_menu.png);
+    background-size: 55%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
     .footer-container {
         flex-direction: column;
         align-items: center;
@@ -670,4 +775,107 @@ footer a {
         height: 45px;
         background-size: 50%;
     }
+
+    #conteudo p {
+        color: rgb(31, 84, 124);
+        text-align: justify;
+    }
+
+    #conteudo h5 {
+        font-size: 28px;
+    }
+
+    .conteudo-saudacao {
+        margin-bottom: -5vh;
+        margin-top: -0.2vh;
+        height: 18vh;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(to bottom, transparent 0%, rgba(12, 47, 73, 0.6) 100%) rgb(31, 84, 124);
+    }
+
+    .conteudo-saudacao h1 {
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .conteudo-saudacao p {
+        font-size: 0.9rem;
+        color: white;
+    }
+
+
+    /* ===== Bloco valores (ícones circulares + título) ===== */
+    :root {
+        --cor-primaria: rgb(31, 84, 124);
+        /* cor do texto (ajuste conforme fundo) */
+        --sombra: 0 6px 14px rgba(0, 0, 0, 0.15);
+        --icone: rgb(255, 255, 255);
+    }
+
+    /* Container geral */
+    .valores {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        justify-content: center;
+        /* centro por padrão */
+        align-items: flex-start;
+        width: 100vw;
+        padding: 18px 10px;
+        margin: 16px 0;
+        color: var(--texto);
+    }
+
+    /* Cada item */
+    .valor {
+        width: 120px;
+        min-width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+
+    /* Círculo que contém o SVG */
+    .icone {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        background: var(--cor-primaria);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: var(--sombra);
+        transition: transform .12s ease, box-shadow .18s ease;
+    }
+
+    /* SVG adaptável - usa currentColor para preencher */
+    .icone svg {
+        width: 36px;
+        height: 36px;
+        display: block;
+        fill: var(--icone);
+        /* cor do desenho dentro do círculo */
+    }
+
+    /* Título (texto embaixo) */
+    .valor .titulo {
+        font-size: 0.86rem;
+        font-weight: 700;
+        letter-spacing: .4px;
+        color: var(--cor-primaria);
+        padding: 0 4px;
+    }
+
+    /* Hover: sobe ligeiro e muda sombra */
+    .valor:hover .icone {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22);
+    }
+
+
 }
