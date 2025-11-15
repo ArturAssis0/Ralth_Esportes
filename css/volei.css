@@ -41,7 +41,7 @@
 /* ---------- INFO + IMAGEM ---------- */
 .info-conteudo {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 10%;
     width: 40vw;
 
