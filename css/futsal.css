@@ -179,7 +179,7 @@ body {
     justify-content: center;
     gap: 10%;
     width: 40vw;
-
+    margin-left: 42%;
     /* estado inicial da animação */
     opacity: 0;
     transform: translateY(-20px);
