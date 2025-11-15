@@ -72,6 +72,17 @@
     object-fit: contain;
 }
 
+@media (max-width: 768px) {
+    html, body {overflow-x: hidden;}
+    #escolas { flex-direction: column; gap: 15px; margin-top: 5vh; }
+    .iten_escola { width: 85vw; height: 24vh; margin: 10px auto; padding: 0; }
+    #info_escola { width: 90%; margin: 10px auto; font-size: 0.9rem; }
+    .info-conteudo { flex-direction: column; gap: 15px; width: 100%; margin: 0; }
+    .info-conteudo div { width: 100%; }
+    .info-imagem { width: 100%; text-align: center; }
+    .imagem-escola { width: 80%; height: auto; }
+}
+
 /* ---------------------------------------------------- */
 /* ---------- DESKTOP (>=900px) ---------- */
 /* ---------------------------------------------------- */
