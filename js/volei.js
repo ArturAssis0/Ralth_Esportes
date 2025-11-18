@@ -74,7 +74,7 @@ TURNO TARDE
 DIAS DA SEMANA: 2ª E 4ª FEIRA  
 HORÁRIO: 17H30 ÀS 18H20 - SUB 08 | 10 | 12
             `,
-            imagem: "img/KALIL VOLEI.png",
+            imagem: "img/SUPREMO VÔLEI.png",
         },
 
         // =======================================================
