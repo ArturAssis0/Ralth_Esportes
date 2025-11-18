@@ -202,7 +202,7 @@
   border-radius: 8px;
 }
 
-#inf p {
+.content_geral p {
     color: rgb(31, 84, 124) !important;
     display: flex;
     justify-content: left;
