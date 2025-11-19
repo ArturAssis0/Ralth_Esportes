@@ -122,7 +122,7 @@ TURNO TARDE
 DIAS DA SEMANA: 3ª E 5ª FEIRA  
 HORÁRIO: 17H40 ÀS 18H30 - SUB 08 | 10 | 12
             `,
-            imagem: "img/CRESCER ESPORTES.png",
+            imagem: "img/img_volei_crescer.jpeg",
         },
     };
 
