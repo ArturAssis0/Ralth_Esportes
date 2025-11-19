@@ -28,6 +28,10 @@
   
 }
 
+.contents p {
+    text-align: left;
+}
+
 .contents.mostrar {
   max-height: 50vh; 
   width: 80%;
