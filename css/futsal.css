@@ -68,7 +68,7 @@
     color: rgb(31, 84, 124); 
 }
 .info-texto div {
-    text-align: justify;
+    text-align: justify !important;
     text-indent: 0px !important;
 }
 
