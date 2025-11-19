@@ -135,11 +135,16 @@
 
     .contents {
         border-radius: 5px;
+        color: rgb(31, 84, 124) !important;
     }
 
     #logo_evento {
         height: 15rem;
         width: 15rem;
+    }
+
+    #inf_content {
+        margin-top: 5vh;
     }
 
     .opc_inf {
