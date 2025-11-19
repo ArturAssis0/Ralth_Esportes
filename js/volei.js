@@ -156,8 +156,8 @@ HORÁRIO: 17H40 ÀS 18H30 - SUB 08 | 10 | 12
                         <p>${dados.horarios2}</p>
                     </div>
 
-                    <div class="info-imagem">
-                        <img src="${dados.imagem}" alt="${dados.nome}" class="imagem-escola">
+                    <div class="info-imagem" style="background-image: url(${dados.imagem});">
+                        
                     </div>
                 </div>
             `;

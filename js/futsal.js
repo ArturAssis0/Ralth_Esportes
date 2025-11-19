@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
                      Iniciamos nossa parceria em 2018, com a proposta de ensinar o FUTSAL de forma dinâmica e lúdica no âmbito escolar. Utilizamos as dependências do Colégio
                      proporcionando aos alunos um ambiente seguro e acolhedor, propício para o aprendizado e para fazer muitas amizades.`,
             nome2: "DIAS E HORARIOS",
-            imagem: "img/CCV FUTSAL.png",
+            imagem: "img/img_futsal_ccv.jpeg",
 
         },
         item_2: {
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         Iniciamos nossa parceria em 2019, com a proposta de ensinar o FUTSAL de forma dinâmica e lúdica no âmbito escolar. Utilizamos as 
                         dependências do Colégio proporcionando aos alunos um ambiente seguro e acolhedor, propício para o aprendizado e para fazer muitas amizades. `,
             nome2: "DIAS E HORARIOS",
-            imagem: "img/SUPREMO FUTSAL.png",
+            imagem: "img/img_futsal_supremo.jpeg",
 
         },
         item_3: {
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         Iniciamos nossa parceria em 2023, com a proposta de ensinar o FUTSAL de forma dinâmica e lúdica no âmbito escolar. Utilizamos as 
                         dependências do Colégio proporcionando aos alunos um ambiente seguro e acolhedor, propício para o aprendizado e para fazer muitas amizades. `,
             nome2: "DIAS E HORARIOS",
-            imagem: "img/CRESCER ESPORTES.png",
+            imagem: "img/img_futsal_kalil.jpeg",
 
         },
         item_6: {
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         Iniciamos nossa parceria em 2025, com a proposta de ensinar o FUTSAL de forma dinâmica e lúdica no âmbito escolar. Utilizamos as
                         dependências do Colégio proporcionando aos alunos um ambiente seguro e acolhedor, propício para o aprendizado e para fazer muitas amizades. `,
             nome2: "DIAS E HORARIOS",
-            imagem: "img/CRESCER ESPORTES.png",
+            imagem: "img/img_futsal_ihf.jpeg",
 
         },
                 item_5: {
@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         Utilizamos as dependências do Colégio proporcionando aos alunos um ambiente seguro e acolhedor, propício para o aprendizado
                          e para fazer muitas amizades.`,
             nome2: "DIAS E HORARIOS",
-            imagem: "img/CRESCER ESPORTES.png",
+            imagem: "img/img_futsal_construir.jpeg",
 
         },
     };
@@ -147,12 +147,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="info-conteudo">
                     <div class="info-texto">
                         <h2>${dados.nome}</h2>
-                        <div>${dados.descricao}</div>
+                        <p>${dados.descricao}</p>
+
                         <h2>${dados.nome2}</h2>
-                        <div>${dados.horarios2}<br><br>${dados.horarios1}</div>
+                        <p>${dados.horarios1}</p>
+                        <p>${dados.horarios2}</p>
                     </div>
-                    <div class="info-imagem">
-                        <img src="${dados.imagem}" alt="${dados.nome}" class="imagem-escola">
+
+                    <div class="info-imagem" style="background-image: url(${dados.imagem});">
+                        
                     </div>
                 </div>
             `;

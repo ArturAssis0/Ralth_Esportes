@@ -52,6 +52,7 @@
 }
 .info-texto div {
     text-align: justify;
+    text-indent: 0px !important;
 }
 
 .info-texto h2 {
@@ -64,7 +65,8 @@
     height: 10vh;
     text-align: center;
     padding: 40px;
-    margin: 0.5%;
+    margin: 0.9%;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -73,8 +75,8 @@
     display: flex;
     justify-content: center;
     gap: 10%;
-    width: 50vw;
-    margin-left: -67%;
+    width: 70vw;
+    margin-left: -55%;
     /* estado inicial da animação */
     opacity: 0;
     transform: translateY(-20px);
@@ -93,19 +95,19 @@ p {
 }
 
 .info-conteudo div { 
-    width: 20vw; 
+    width: 80vw;
+    height: 55vh; 
 }
 
 .info-imagem { 
-    width: 40vw; 
+    border: 2px solid rgb(31, 84, 124);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
 
-.imagem-escola { 
-    margin-top: 8%; 
-    width: 35vw; 
-    height: 50vh; 
-    
-}
 /* ---------- MOBILE ---------- */
 @media (max-width: 768px) {
     html, body {overflow-x: hidden;}
