@@ -116,8 +116,8 @@ p {
     #info_escola { width: 90%; margin: 10px auto; font-size: 0.9rem; }
     .info-conteudo { flex-direction: column; gap: 15px; width: 100%; margin: 0; }
     .info-conteudo div { width: 100%; }
-    .info-imagem { width: 100%; text-align: center; }
-    .imagem-escola { width: 80%; height: auto; }
+    .info-texto {text-align: justify;}
+    .info-imagem { width: 100%; text-align: center; margin-top: 5%;}
 }
 footer {
     margin-top: 8.2%;
