@@ -25,14 +25,21 @@ document.addEventListener("DOMContentLoaded", () => {
       opcoes.classList.toggle("mostrar");
   });
 
+
+  document.addEventListener("click", (e) => {
+      if (!menu.contains(e.target) && !opcoes.contains(e.target)) {
+          opcoes.classList.remove("mostrar"); 
+      }
+  });
+
+
+  opcoes.addEventListener("click", (e) => {
+      e.stopPropagation(); 
+  });
+
+
   const carrossel = document.querySelector(".carrossel");
   carrossel.addEventListener("click", () => {
       opcoes.classList.remove("mostrar"); 
   });
-
-  const sessao = document.getElementsByTagName('section');
-  sessao.addEventListener("click", function(){
-    opcoes.classList.remove("mostrar");
-  })
-
 });
