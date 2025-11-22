@@ -32,17 +32,32 @@
     text-align: left;
 }
 
+.p-inscricoes {
+    text-indent: 0px !important;
+    text-align: center !important;
+}
+
 .contents.mostrar {
-  max-height: 50vh; 
+  max-height: 60vh; 
   width: 80%;
   opacity: 1;
   padding: 10px;
   background-color: #eeeeee;
 }
 
-.negrito
-{
-    font-weight: bolder;
+#btn-voltar:hover {
+    background: rgb(22, 68, 104);
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+
+#titulo {
+    color: rgb(31, 84, 124);
+}
+
+span {
+    text-align: left;
 }
 
 #titulo
@@ -138,6 +153,20 @@
         align-items: center;
     }
 
+    #btn-voltar {
+    display: inline-block;
+    margin-top: 6vh;
+    margin-bottom: -5vh;
+    margin-right: 70%;
+    width: auto;
+    background-color: rgb(31, 84, 124);
+    border: 1px solid white;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
     .contents {
         border-radius: 5px;
         color: rgb(31, 84, 124) !important;
@@ -145,7 +174,7 @@
 
     #logo_evento {
         height: 15rem;
-        width: 15rem;
+        width: 20rem;
     }
 
     #inf_content {
@@ -153,7 +182,7 @@
     }
 
     .opc_inf {
-    width: 90%;
+    width: 80%;
     font-size: 1.1rem;
     font-weight: 600;
     margin: 10px 0;
@@ -182,6 +211,20 @@
 /* ========== MEDIA QUERIES PARA DESKTOPS (1024px+) ========== */
 @media (min-width: 767px) {
 
+#btn-voltar {
+    display: inline-block;
+    margin-top: 6vh;
+    margin-bottom: -5vh;
+    margin-right: 85%;
+    width: auto;
+    background-color: rgb(31, 84, 124);
+    border: 1px solid white;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
 #inf_content {
   margin-top: 10vh;
   margin-bottom: 10vh;
@@ -205,9 +248,9 @@
 
 /* ========= ITENS ========= */
 #logo_evento {
-  width: 35rem;
-  height: 60vh;
-  background-image: url(../../img/img_volei.jpg);
+  width: 55rem;
+  height: 30rem;
+  background-image: url(../../img/ex_campeonato1.jpeg);
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -241,6 +284,18 @@
 
 .contents {
     text-align: center;
+}
+
+.lista {
+    list-style: none;
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(31, 84, 124);
+}
+
+.lista-cronograma {
+    padding: 5px;
 }
 
 .opc_inf:hover {
