@@ -106,7 +106,7 @@ body {
 
 .img1 {
     background-image: url(img/carrossel-1.jpeg);
-    background-size: cover;
+    background-size: 90%;
     background-position: center;
 }
 
