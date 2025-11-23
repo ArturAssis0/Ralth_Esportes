@@ -725,6 +725,87 @@ footer a {
 /* ---------- MOBILE (<=799px) ---------- */
 /* ---------------------------------------------------- */
 @media (max-width: 799px) {
+ 
+.img1 {
+    background-image: url(img/carrossel-1.jpeg);
+    background-color: rgb(31, 84, 124);
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img2 {
+    background-image: url(img/carrossel-2.jpeg);
+    background-size: cover;
+    background-color: rgb(31, 84, 124);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img3 {
+    background-image: url(img/carrossel-3.jpeg);
+    background-size: cover;
+    background-color: rgb(31, 84, 124);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img4 {
+    background-image: url(img/carrossel-4.jpeg);
+    background-size: cover;
+    background-color: rgb(31, 84, 124);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img5 {
+    background-image: url(img/carrossel-5.jpeg);
+    background-size: cover;
+    background-color: rgb(31, 84, 124);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img6 {
+    background-image: url(img/carrossel-6.jpeg);
+    background-size: cover;
+    background-color: rgb(31, 84, 124);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img7 {
+    background-image: url(img/carrossel-7.jpeg);
+    background-size: cover;
+    background-color: rgb(31, 84, 124);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img8 {
+    background-image: url(img/carrossel-8.jpeg);
+    background-size: cover;
+    background-color: rgb(31, 84, 124);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img9 {
+    background-image: url(img/carrossel-9.jpeg);
+    background-size: cover;
+    background-color: rgb(31, 84, 124);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img10 {
+    background-image: url(img/carrossel-10.jpeg);
+    background-size: cover;
+    background-color: rgb(31, 84, 124);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
     #meio_topo {
         background: linear-gradient(to bottom, transparent 0%, rgba(12, 47, 73, 0.6) 100%) rgb(31, 84, 124);
         display: flex;
