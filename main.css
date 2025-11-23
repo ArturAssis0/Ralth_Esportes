@@ -736,7 +736,7 @@ footer a {
 
 .img2 {
     background-image: url(img/carrossel-2.jpeg);
-    background-size: cover;
+    background-size: contain !important;
     background-color: rgb(31, 84, 124);
     background-repeat: no-repeat;
     background-position: center;
@@ -744,7 +744,7 @@ footer a {
 
 .img3 {
     background-image: url(img/carrossel-3.jpeg);
-    background-size: cover;
+    background-size: contain !important;
     background-color: rgb(31, 84, 124);
     background-repeat: no-repeat;
     background-position: center;
@@ -752,7 +752,7 @@ footer a {
 
 .img4 {
     background-image: url(img/carrossel-4.jpeg);
-    background-size: cover;
+    background-size: contain !important;
     background-color: rgb(31, 84, 124);
     background-repeat: no-repeat;
     background-position: center;
@@ -760,7 +760,7 @@ footer a {
 
 .img5 {
     background-image: url(img/carrossel-5.jpeg);
-    background-size: cover;
+    background-size: contain !important;
     background-color: rgb(31, 84, 124);
     background-repeat: no-repeat;
     background-position: center;
@@ -768,7 +768,7 @@ footer a {
 
 .img6 {
     background-image: url(img/carrossel-6.jpeg);
-    background-size: cover;
+    background-size: contain !important;
     background-color: rgb(31, 84, 124);
     background-repeat: no-repeat;
     background-position: center;
@@ -776,7 +776,7 @@ footer a {
 
 .img7 {
     background-image: url(img/carrossel-7.jpeg);
-    background-size: cover;
+    background-size: contain !important;
     background-color: rgb(31, 84, 124);
     background-repeat: no-repeat;
     background-position: center;
@@ -784,7 +784,7 @@ footer a {
 
 .img8 {
     background-image: url(img/carrossel-8.jpeg);
-    background-size: cover;
+    background-size: contain !important;
     background-color: rgb(31, 84, 124);
     background-repeat: no-repeat;
     background-position: center;
@@ -792,7 +792,7 @@ footer a {
 
 .img9 {
     background-image: url(img/carrossel-9.jpeg);
-    background-size: cover;
+    background-size: contain !important;
     background-color: rgb(31, 84, 124);
     background-repeat: no-repeat;
     background-position: center;
@@ -800,7 +800,7 @@ footer a {
 
 .img10 {
     background-image: url(img/carrossel-10.jpeg);
-    background-size: cover;
+    background-size: contain !important;
     background-color: rgb(31, 84, 124);
     background-repeat: no-repeat;
     background-position: center;
