@@ -90,7 +90,7 @@ body {
 .carrossel {
     width: 100%;
     max-width: 100vw;
-    height: 32vh;
+    height: 34vh;
     margin: auto;
     position: relative;
     overflow: hidden;
@@ -106,61 +106,91 @@ body {
 
 .img1 {
     background-image: url(img/carrossel-1.jpeg);
-    background-size: 90%;
+    background-size: 97%;
+    background-color: rgb(31, 84, 124);
+    height: 100%;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
 .img2 {
     background-image: url(img/carrossel-2.jpeg);
-    background-size: cover;
+    background-size: 97%;
+    background-color: rgb(31, 84, 124);
+    height: 100%;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
 .img3 {
     background-image: url(img/carrossel-3.jpeg);
-    background-size: cover;
+    background-size: 97%;
+    background-color: rgb(31, 84, 124);
+    height: 100%;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
 .img4 {
     background-image: url(img/carrossel-4.jpeg);
-    background-size: cover;
+    background-size: 97%;
+    background-color: rgb(31, 84, 124);
+    height: 100%;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
 .img5 {
     background-image: url(img/carrossel-5.jpeg);
-    background-size: cover;
+    background-size: 97%;
+    background-color: rgb(31, 84, 124);
+    height: 100%;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
 .img6 {
     background-image: url(img/carrossel-6.jpeg);
-    background-size: cover;
+    background-size: 97%;
+    background-color: rgb(31, 84, 124);
+    height: 100%;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
 .img7 {
     background-image: url(img/carrossel-7.jpeg);
-    background-size: cover;
+    background-size: 97%;
+    background-color: rgb(31, 84, 124);
+    height: 100%;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
 .img8 {
     background-image: url(img/carrossel-8.jpeg);
-    background-size: cover;
+    background-size: 97%;
+    background-color: rgb(31, 84, 124);
+    height: 100%;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
 .img9 {
     background-image: url(img/carrossel-9.jpeg);
-    background-size: cover;
+    background-size: 97%;
+    background-color: rgb(31, 84, 124);
+    height: 100%;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
 .img10 {
     background-image: url(img/carrossel-10.jpeg);
-    background-size: cover;
+    background-size: 97%;
+    background-color: rgb(31, 84, 124);
+    height: 100%;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
