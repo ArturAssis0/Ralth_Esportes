@@ -1,0 +1,23 @@
+.infs-gerais p{
+    color: rgb(31, 84, 124) !important;
+}
+
+.infs-gerais h2{
+    color: rgb(31, 84, 124) !important;
+}
+
+.infs-gerais a{
+    color: rgb(31, 84, 124) !important;
+}
+
+.textos {
+    margin-left: -3%;
+}
+
+.titulo {
+    font-size: 1.8rem;
+}
+
+.subtitulo {
+    font-size: 1.4rem;
+}
