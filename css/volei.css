@@ -68,8 +68,12 @@
     margin: 0.9%;
     border-radius: 5px;
     cursor: pointer;
+    transition: transform .3s;
 }
 
+.iten_escola:hover {
+    transform: scale(1.05);
+}
 /* ---------- INFO + IMAGEM ---------- */
 .info-conteudo {
     display: flex;
