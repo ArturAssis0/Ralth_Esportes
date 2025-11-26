@@ -21,3 +21,8 @@
 .subtitulo {
     font-size: 1.4rem;
 }
+
+hr {
+    border: solid 0.1px rgb(31, 84, 124);
+    color: rgb(31, 84, 124);
+}

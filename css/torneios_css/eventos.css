@@ -1,3 +1,7 @@
+.p-inscricoes a {
+    text-decoration: underline;
+    color: rgb(31, 84, 124);
+}
 
 #inf_content
 {
