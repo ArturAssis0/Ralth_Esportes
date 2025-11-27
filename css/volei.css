@@ -145,12 +145,23 @@ p {
         height: auto; /* Altura adaptável no mobile */
     }
 
-    .info-imagem {
-        width: 100%;
-        height: 250px; /* Altura fixa para celular */
-        background-size: contain; /* Evita cortar a imagem */
-        order: -1; /* Opcional: imagem antes do texto */
-    }
+.info-imagem {
+    border: 2px solid rgb(31, 84, 124);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;       /* cover mantém enquadramento visual */
+    width: 100%;
+    /* garante altura visível mesmo que o pai não defina altura */
+    min-height: 200px;
+    margin-left: 4%;
+    /* alternativa moderna que preserva proporção */
+    aspect-ratio: 4 / 3;
+    display: block;
+    box-sizing: border-box;
+    background-color: #eef6fb;    /* cor suave enquanto imagem não carrega */
+    overflow: hidden;
+}
 
     .info-texto { text-align: justify; }
 }
