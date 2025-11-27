@@ -149,13 +149,6 @@ p {
     }
 
     .info-imagem {
-        width: 100%;
-        height: 250px; /* Altura fixa para celular */
-        background-size: contain; /* Evita cortar a imagem */
-        order: -1; /* Opcional: imagem antes do texto */
-    }
-
-    .info-imagem {
     border: 2px solid rgb(31, 84, 124);
     border-radius: 10px;
     background-repeat: no-repeat;
