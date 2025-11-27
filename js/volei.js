@@ -48,7 +48,7 @@ TURNO TARDE
 DIAS DA SEMANA: 4ª E 6ª FEIRA  
 HORÁRIO: 17H30 ÀS 18H20 - SUB 08 | 10 | 12
             `,
-            imagem: "img/SUPREMO VÔLEI.png",
+            imagem: "img/img_volei_supremo.jpeg",
         },
 
         // =======================================================
@@ -74,7 +74,7 @@ TURNO TARDE
 DIAS DA SEMANA: 2ª E 4ª FEIRA  
 HORÁRIO: 17H30 ÀS 18H20 - SUB 08 | 10 | 12
             `,
-            imagem: "img/SUPREMO VÔLEI.png",
+            imagem: "img/img_volei_kalil.jpeg",
         },
 
         // =======================================================
@@ -96,7 +96,7 @@ TURNO TARDE
 DIAS DA SEMANA: 3ª E 5ª FEIRA  
 HORÁRIO: 17H40 ÀS 18H30 - SUB 11 E 13
             `,
-            imagem: "img/CRESCER ESPORTES.png",
+            imagem: "img/img_volei_construir.jpeg",
         },
 
         // =======================================================
