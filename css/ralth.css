@@ -133,7 +133,7 @@ hr {
    IMAGEM AO LADO
    ============================================================ */
 .info-imagem {
-    width: 15vw;
+    width: 22vw;
     height: 30vh;
     border: 2px solid rgb(31, 84, 124);
     border-radius: 10px;
@@ -146,6 +146,7 @@ hr {
    MOBILE
    ============================================================ */
 @media (max-width: 1068px) {
+
 
     .info-conteudo {
         flex-direction: column;
@@ -255,6 +256,12 @@ footer {
     html, body {
         overflow-x: hidden;
     }
+
+    
+hr {
+    border: solid 0.1px rgb(31, 84, 124);
+}
+
 
     /* Container de itens */
     #items_ralth {

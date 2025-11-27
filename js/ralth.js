@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
             item_lista_5: "Refrigerantes",
             item_lista_6: "E muito mais!",
             informacao1: "Consulte horários de funcionamento e preços.",
-            imagem: "../img/img_lanchonete.jpeg"
+            imagem: "img/img_acai.jpeg"
         }
     };
 
@@ -119,31 +119,36 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     itens.forEach(item => {
-itens.forEach(item => {
-    item.addEventListener("click", () => {
-        const dados = informacoes[item.id]; // pega os dados corretos
-        let html = '';
+        itens.forEach(item => {
+            item.addEventListener("click", () => {
+                const dados = informacoes[item.id]; // pega os dados corretos
+                let html = '';
 
-        if (item.id === "item_3") {
-            // Layout centralizado para lanchonete
-            html = `
-            <div class="info-conteudo centralizado">
-                <h2 class="titulo2">${dados.titulo}</h2>
-                <p>${dados.subtitulo || ''}</p>
-                <ul>
-                    ${dados.item_lista_1 ? `<li>${dados.item_lista_1}</li>` : ''}
-                    ${dados.item_lista_2 ? `<li>${dados.item_lista_2}</li>` : ''}
-                    ${dados.item_lista_3 ? `<li>${dados.item_lista_3}</li>` : ''}
-                    ${dados.item_lista_4 ? `<li>${dados.item_lista_4}</li>` : ''}
-                    ${dados.item_lista_5 ? `<li>${dados.item_lista_5}</li>` : ''}
-                    ${dados.item_lista_6 ? `<li>${dados.item_lista_6}</li>` : ''}
-                </ul>
-                <p>${dados.informacao1 || ''}</p>
-            </div>
+                if (item.id === "item_3") {
+                    // Layout centralizado para lanchonete
+                    html = `
+<div class="info-conteudo centralizado">
+    <h2 class="titulo2">${dados.titulo}</h2>
+    <p>${dados.subtitulo || ''}</p>
+
+    <div class="info-imagem" style="background-image: url(${dados.imagem});"></div>
+
+    <ul>
+        ${dados.item_lista_1 ? `<li>${dados.item_lista_1}</li>` : ''}
+        ${dados.item_lista_2 ? `<li>${dados.item_lista_2}</li>` : ''}
+        ${dados.item_lista_3 ? `<li>${dados.item_lista_3}</li>` : ''}
+        ${dados.item_lista_4 ? `<li>${dados.item_lista_4}</li>` : ''}
+        ${dados.item_lista_5 ? `<li>${dados.item_lista_5}</li>` : ''}
+        ${dados.item_lista_6 ? `<li>${dados.item_lista_6}</li>` : ''}
+    </ul>
+
+    <p>${dados.informacao1 || ''}</p>
+</div>
+
             `;
-        } else {
-            // Layout normal para esportes
-            html = `
+                } else {
+                    // Layout normal para esportes
+                    html = `
             <div class="info-conteudo">
                 <div class="info-texto">
 
@@ -182,21 +187,21 @@ itens.forEach(item => {
                 </div>
             </div>
             `;
-        }
+                }
 
-        infoSection.innerHTML = html;
-        infoSection.style.display = "block";
+                infoSection.innerHTML = html;
+                infoSection.style.display = "block";
 
-        const bloco = infoSection.querySelector(".info-conteudo");
-        setTimeout(() => bloco.classList.add("ativo"), 20);
+                const bloco = infoSection.querySelector(".info-conteudo");
+                setTimeout(() => bloco.classList.add("ativo"), 20);
 
-        if (window.innerWidth <= 1068) {
-            infoSection.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
-    });
-});
+                if (window.innerWidth <= 1068) {
+                    infoSection.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+            });
+        });
 
-;
+        ;
         ;
 
     });
