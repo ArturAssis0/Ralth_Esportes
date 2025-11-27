@@ -1,82 +1,56 @@
-
-
-#escolas
-{
+/* ================================
+   GRID DAS ESCOLAS
+================================ */
+#escolas {
+    overflow: hidden;
     margin-top: 0vh;
-    margin-bottom: 4%; 
+    margin-bottom: 4%;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-
-#item_1
-{
-    background-image: url(../img/CCV\ FUTSAL.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+.iten-escola-wrapper {
+    width: 11vw;
+    height: 10vh;
+    display: inline-block;    /* mantém tamanho fixo */
+    overflow: hidden;         /* evita que o hover empurre outros elementos */
 }
 
-#item_2
-{
-    background-image: url(../img/SUPREMO\ FUTSAL.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+/* ================================
+   IMAGENS DAS ESCOLAS
+================================ */
+#item_1 { background-image: url("../img/CCV FUTSAL.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+#item_2 { background-image: url("../img/SUPREMO FUTSAL.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+#item_3 { background-image: url("../img/KALIL FUTSAL.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+#item_4 { background-image: url("../img/CONSTRUIR FUTSAL.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+#item_5 { background-image: url("../img/CRESCER ESPORTES.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+#item_6 { background-image: url("../img/IHF FUTSAL.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
 
-#item_3
-{
-    background-image: url(../img/KALIL\ FUTSAL.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#item_4
-{
-    background-image: url(../img/CONSTRUIR\ FUTSAL.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#item_5
-{
-    background-image: url(../img/CRESCER\ ESPORTES.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#item_6
-{
-    background-image: url(../img/IHF\ FUTSAL.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
+/* ================================
+   ÁREA DE INFORMAÇÕES
+================================ */
 #info_escola {
     width: 31%;
     padding: 10px;
     margin-left: 17%;
     font-family: "Montserrat", sans-serif;
-    color: rgb(31, 84, 124); 
+    color: rgb(31, 84, 124);
 }
+
 .info-texto div {
     text-align: justify !important;
-    text-indent: 0px !important;
+    text-indent: 0 !important;
 }
 
 .info-texto h2 {
     text-align: left;
 }
 
-/* ---- itens das escolas ---- */
+/* ================================
+   MINI CARDS DAS ESCOLAS
+================================ */
 .iten_escola {
     width: 11vw;
     height: 10vh;
@@ -85,25 +59,51 @@
     margin: 0.9%;
     border-radius: 5px;
     cursor: pointer;
-    transition: transform .3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-origin: center center; /* garante que cresça para dentro/fora do centro */
 }
 
 .iten_escola:hover {
     transform: scale(1.05);
+
 }
 
-
-/* ---------- INFO + IMAGEM ---------- */
+/* ================================
+   BLOCO COM TEXTO + IMAGEM
+================================ */
 .info-conteudo {
     display: flex;
     justify-content: center;
     gap: 10%;
     width: 70vw;
     margin-left: -15%;
-    /* estado inicial da animação */
     opacity: 0;
     transform: translateY(-20px);
     transition: opacity .6s ease, transform .6s ease;
+}
+
+.info-conteudo.ativo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.info-conteudo > div {
+    width: 80vw;
+    height: 55vh; /* Altura desktop restaurada */
+}
+
+.info-imagem {
+    border: 2px solid rgb(31, 84, 124);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%; /* Garante que ocupe a altura do pai */
+}
+
+.info-texto {
+    z-index: 2;
 }
 
 p {
@@ -111,36 +111,76 @@ p {
     font-weight: normal !important;
 }
 
-/* quando ativar a animação */
-.info-conteudo.ativo {
-    opacity: 1;
-    transform: translateY(0);
+/* ================================
+   MOBILE
+================================ */
+@media (max-width: 768px) {
+    html, body { overflow-x: hidden; }
+
+    #escolas {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 5vh;
+    }
+
+    .iten_escola {
+        width: 85vw;
+        height: 24vh;
+        margin: 10px auto;
+        padding: 0;
+    }
+
+    #info_escola {
+        width: 90%;
+        margin: 10px auto;
+        font-size: 0.9rem;
+    }
+
+    .info-conteudo {
+        flex-direction: column;
+        gap: 15px;
+        width: 94%;
+        margin: 0;
+    }
+
+    .info-conteudo > div {
+        width: 100%;
+        height: auto; /* Altura adaptável no mobile */
+    }
+
+    .info-imagem {
+        width: 100%;
+        height: 250px; /* Altura fixa para celular */
+        background-size: contain; /* Evita cortar a imagem */
+        order: -1; /* Opcional: imagem antes do texto */
+    }
+
+    .info-texto { text-align: justify; }
 }
 
-.info-conteudo div { 
-    width: 80vw;
-    height: 55vh; 
-}
-
-.info-imagem { 
+/* Telas estreitas e altas (S8+) */
+@media screen and (max-width: 420px) and (min-height: 740px) {
+    .iten_escola { height: 24vh; }
+.info-imagem {
     border: 2px solid rgb(31, 84, 124);
     border-radius: 10px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover;       /* cover mantém enquadramento visual */
+    width: 100%;
+    /* garante altura visível mesmo que o pai não defina altura */
+    min-height: 200px;
+    margin-left: 4%;
+    /* alternativa moderna que preserva proporção */
+    aspect-ratio: 4 / 3;
+    display: block;
+    box-sizing: border-box;
+    background-color: #eef6fb;    /* cor suave enquanto imagem não carrega */
+    overflow: hidden;
+}
+    .info-conteudo > div { height: auto !important; }
+}
 
-}
-/* ---------- MOBILE ---------- */
-@media (max-width: 768px) {
-    html, body {overflow-x: hidden;}
-    #escolas { flex-direction: column; gap: 15px; margin-top: 5vh; }
-    .iten_escola { width: 85vw; height: 24vh; margin: 10px auto; padding: 0; }
-    #info_escola { width: 90%; margin: 10px auto; font-size: 0.9rem; }
-    .info-conteudo { flex-direction: column; gap: 15px; width: 100%; margin: 0; }
-    .info-conteudo div { width: 100%; }
-    .info-texto {text-align: justify;}
-    .info-imagem { width: 100%; text-align: center; margin-top: 5%;}
-}
 footer {
     margin-top: 6.2%;
 }
