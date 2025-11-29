@@ -149,9 +149,9 @@ document.addEventListener("DOMContentLoaded", () => {
 </div>
                 `;
             } else {
-                // ==========================
-                // VÔLEI E FUTSAL
-                // ==========================
+
+                if(item.id === "item_2"){
+
                 html = `
 <div class="info-conteudo">
     <div class="info-texto">
@@ -194,7 +194,55 @@ document.addEventListener("DOMContentLoaded", () => {
 
     </div>
 </div>
-                `;
+                `}else{
+
+                //FUTSAL
+
+                    html = `
+<div class="info-conteudo">
+    <div class="info-texto">
+
+        <h2 class="titulo">${dados.titulo}</h2>
+
+        <!-- BLOCO 1 -->
+        <div class="info-bloco">
+            <h3>${dados.subtitulo || ""}</h3>
+            <p>${dados.item_lista_1 || ""}</p>
+            <p>${dados.item_lista_2 || ""}</p>
+            <p>${dados.item_lista_3 || ""}</p>
+        </div>
+
+        <!-- BLOCO 2 -->
+        <div class="info-bloco">
+            <h3>${dados.subtitulo2 || ""}</h3>
+            <p>${dados.item_lista_4 || ""}</p>
+            <p>${dados.item_lista_5 || ""}</p>
+            <p>${dados.item_lista_6 || ""}</p>
+        </div>
+
+        <!-- BLOCO 3 -->
+        <div class="info-bloco">
+            <h3>${dados.subtitulo3 || ""}</h3>
+            <p>${dados.item_lista_7 || ""}</p>
+            <p>${dados.item_lista_8 || ""}</p>
+            <p>${dados.item_lista_9 || ""}</p>
+        </div>
+
+        <!-- BLOCO 5 -->
+        <div class="info-bloco">
+            <p id="span-negrito">${dados.informacao1 || ''}</p>
+            <p>${dados.informacao2 || ''}</p>
+            <p>${dados.informacao3 || ''}</p>
+            <p>${dados.informacao3_5 || ''}</p>
+            <p>${dados.informacao4 || ''}</p>
+            <p>${dados.informacao5 || ''}</p>
+        </div>
+
+    </div>
+</div>
+                `
+
+                };
             }
 
             infoSection.innerHTML = html;
