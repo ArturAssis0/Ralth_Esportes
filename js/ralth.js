@@ -138,8 +138,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     <ul>
         ${dados.item_lista_1 ? `<li>${dados.item_lista_1}</li>` : ''}
-        ${dados.item_lista_2 ? `<li>${dados.item_lista_2}</li>` : ''}
-        ${dados.item_lista_3 ? `<li>${dados.item_lista_3}</li>` : ''}
+        ${dados.item_lista_2 ? `<li>${dados.item_lista_3}</li>` : ''}
+        ${dados.item_lista_3 ? `<li>${dados.item_lista_2}</li>` : ''}
         ${dados.item_lista_4 ? `<li>${dados.item_lista_4}</li>` : ''}
         ${dados.item_lista_5 ? `<li>${dados.item_lista_5}</li>` : ''}
         ${dados.item_lista_6 ? `<li>${dados.item_lista_6}</li>` : ''}

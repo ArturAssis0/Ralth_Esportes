@@ -234,6 +234,7 @@ footer {
 
 .info-conteudo.centralizado li {
     margin: 5px 0;
+    text-align: left;
     font-size: 1.1rem;
     color: rgb(31, 84, 124);
 }
@@ -258,6 +259,12 @@ footer {
     }
 
     
+.item-lista-esquerda {
+
+    color: red;
+
+}
+
 hr {
     border: solid 0.1px rgb(31, 84, 124);
 }
