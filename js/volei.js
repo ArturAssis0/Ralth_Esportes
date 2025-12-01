@@ -90,7 +90,6 @@ Iniciamos nossa parceria em 2024, com a proposta de ensinar o VÔLEI de forma di
 Utilizamos as dependências do Colégio proporcionando aos alunos um ambiente seguro e acolhedor, propício para o aprendizado e para fazer muitas amizades.
             `,
             nome2: "DIAS E HORÁRIOS",
-            horarios1: `TURNO MANHÃ — (não informado)`,
             horarios2: `
 TURNO TARDE  
 DIAS DA SEMANA: 3ª E 5ª FEIRA  
