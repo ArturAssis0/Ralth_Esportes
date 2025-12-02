@@ -21,112 +21,134 @@ document.addEventListener("DOMContentLoaded", () => {
 
     opcoes.addEventListener("click", (e) => e.stopPropagation());
 
-    const escolas = {
-        item_1: {
-            nome: "ESCOLA FUTSAL DE CCV",
+const escolas = {
+    item_1: {
+        nome: "ESCOLA DE FUTSAL CCV",
 
-            horarios1: `TURNO MANHÃ  DIAS DA SEMANA: 2ª E 4ª FEIRA HORÁRIO: 11H30 ÀS 12H20 - SUB 08|10|12`,
+        horarios1Titulo: "TURNO MANHÃ – 2 DIAS DA SEMANA",
+        horarios1Informacoes: "2ª e 4ª FEIRA • 11H30 às 12H20 – SUB 08 | 10 | 12",
 
-            horarios2: `TURNO TARDE DIAS DA SEMANA: 2ª E 4ª FEIRA HORÁRIO: 17H40 ÀS 18H30 - SUB 08|10|12`,
+        horarios2Titulo: "TURNO TARDE – 2 DIAS DA SEMANA",
+        horarios2Informacoes: "2ª e 4ª FEIRA • 17H40 às 18H30 – SUB 08 | 10 | 12",
 
-            horarios3: `TURNO TARDE - INFANTIL DIAS DA SEMANA: 2ª E 4ª FEIRA HORÁRIO: 16H50 ÀS 17H35 - SUB 06`,
+        horarios3Titulo: "TURNO TARDE – INFANTIL",
+        horarios3Informacoes: "2ª e 4ª FEIRA • 16H50 às 17H35 – SUB 06",
 
-            descricao: `A Escola de Futsal CCV está inserida em um dos Colégios da rede particular mais tradicionais de Contagem;
-                     O COLÉGIO CRISTÃO VITÓRIA possui seu diferencial nos princípios Cristãos, além de ter uma linda história de mais de 25 anos de Excelência de Ensino.  
-                     Iniciamos nossa parceria em 2018, com a proposta de ensinar o FUTSAL de forma dinâmica e lúdica no âmbito escolar. Utilizamos as dependências do Colégio
-                     proporcionando aos alunos um ambiente seguro e acolhedor, propício para o aprendizado e para fazer muitas amizades.`,
-            nome2: "DIAS E HORARIOS",
-            imagem: "img/img_futsal_ccv.jpeg",
+        descricao: `A Escola de Futsal CCV está inserida em um dos Colégios da rede particular mais tradicionais de Contagem.
+        O COLÉGIO CRISTÃO VITÓRIA possui como diferencial seus princípios cristãos e uma história de mais de 25 anos de Excelência de Ensino.
+        Iniciamos nossa parceria em 2018, com a proposta de ensinar o FUTSAL de forma dinâmica e lúdica no âmbito escolar, utilizando as dependências do Colégio
+        e proporcionando aos alunos um ambiente seguro, acolhedor e propício ao aprendizado e às amizades.`,
 
-        },
-        item_2: {
-            nome: "ESCOLA DE FUTSAL SUPREMO",
+        nome2: "DIAS E HORÁRIOS",
+        imagem: "img/img_futsal_ccv.jpeg",
+    },
 
-            horarios1: `TURNO MANHÃ DIAS DA SEMANA: 3ª E 5ª FEIRA HORÁRIO: 11H30 ÀS 12H20 - SUB 08 | 10 | 12`,
+    item_2: {
+        nome: "ESCOLA DE FUTSAL SUPREMO",
 
-            horarios2: `TURNO TARDE DIAS DA SEMANA: 3ª E 5ª FEIRA HORÁRIO 2: 17H45 ÀS 18H35 - SUB 08, 10 E 12`,
+        horarios1Titulo: "TURNO MANHÃ – 2 DIAS DA SEMANA",
+        horarios1Informacoes: "3ª e 5ª FEIRA • 11H30 às 12H20 – SUB 08 | 10 | 12",
 
-            horarios3:`TURNO TARDE - INFANTIL DIAS DA SEMANA: 3ª E 5ª FEIRA HORÁRIO: 17H00 ÀS 17H45 - SUB 06`,
+        horarios2Titulo: "TURNO TARDE – 2 DIAS DA SEMANA",
+        horarios2Informacoes: "3ª e 5ª FEIRA • 17H45 às 18H35 – SUB 08 | 10 | 12",
 
-            descricao: `A Escola de Futsal Supremo está inserida em um dos Colégios da rede particular mais tradicionais de Contagem;
-                        O COLÉGIO SUPREMO possui uma estrutura fantástica, além de ter uma linda história de mais de 29 anos de Excelência de Ensino. 
-                        Iniciamos nossa parceria em 2019, com a proposta de ensinar o FUTSAL de forma dinâmica e lúdica no âmbito escolar. Utilizamos as 
-                        dependências do Colégio proporcionando aos alunos um ambiente seguro e acolhedor, propício para o aprendizado e para fazer muitas amizades. `,
-            nome2: "DIAS E HORARIOS",
-            imagem: "img/img_futsal_supremo.jpeg",
+        horarios3Titulo: "TURNO TARDE – INFANTIL",
+        horarios3Informacoes: "3ª e 5ª FEIRA • 17H00 às 17H45 – SUB 06",
 
-        },
-        item_3: {
-            nome: "ESCOLA DE FUTSAL E. KALIL",
+        descricao: `A Escola de Futsal Supremo está inserida em um dos Colégios particulares mais tradicionais de Contagem.
+        O COLÉGIO SUPREMO possui uma estrutura fantástica e mais de 29 anos de Excelência de Ensino.
+        Iniciamos nossa parceria em 2019 com a proposta de ensinar FUTSAL de forma dinâmica e lúdica, utilizando as dependências do Colégio
+        para proporcionar aos alunos um ambiente seguro, acolhedor e propício para o aprendizado e novas amizades.`,
 
-            horarios1: `TURNO MANHÃ DIAS DA SEMANA: 4ª E 6ª FEIRA HORÁRIO: 11H40 ÀS 12H30 - SUB 11 E 13 `,
+        nome2: "DIAS E HORÁRIOS",
+        imagem: "img/img_futsal_supremo.jpeg",
+    },
 
-            horarios2: `TURNO TARDE DIAS DA SEMANA: 3ª E 5ª FEIRA HORÁRIO 2: 18H05 ÀS 18H55 - SUB 08, 10 E 12`,
+    item_3: {
+        nome: "ESCOLA DE FUTSAL E. KALIL",
 
-            horarios3: `TURNO TARDE - INFANTIL DIAS DA SEMANA: 3ª E 5ª FEIRA HORÁRIO: 17H20 ÀS 18H05 - SUB 06`,
+        horarios1Titulo: "TURNO MANHÃ – 2 DIAS DA SEMANA",
+        horarios1Informacoes: "4ª e 6ª FEIRA • 11H40 às 12H30 – SUB 11 | 13",
 
-            descricao: `A Escola de Futsal Elizabeth Kalil está inserida em um dos Colégios da rede particular mais tradicionais de Contagem;
-                        O INSTITUTO ELIZABETH KALIL possui uma estrutura fantástica, além de ter uma linda história de mais de 50 anos de Excelência de Ensino. 
-                        Iniciamos nossa parceria em 2023, com a proposta de ensinar o FUTSAL de forma dinâmica e lúdica no âmbito escolar. Utilizamos as 
-                        dependências do Colégio proporcionando aos alunos um ambiente seguro e acolhedor, propício para o aprendizado e para fazer muitas amizades. `,
-            nome2: "DIAS E HORARIOS",
-            imagem: "img/img_futsal_kalil.jpeg",
+        horarios2Titulo: "TURNO TARDE – 2 DIAS DA SEMANA",
+        horarios2Informacoes: "3ª e 5ª FEIRA • 18H05 às 18H55 – SUB 08 | 10 | 12",
 
-        },
-        item_6: {
-            nome: "ESCOLA DE FUTSAL IHF",
+        horarios3Titulo: "TURNO TARDE – INFANTIL",
+        horarios3Informacoes: "3ª e 5ª FEIRA • 17H20 às 18H05 – SUB 06",
 
-            horarios1: `TURNO MANHÃ DIAS DA SEMANA: 3ª E 6ª FEIRA HORÁRIO: 11H30 ÀS 12H20 - SUB 08|10|12`,
+        descricao: `A Escola de Futsal Elizabeth Kalil está inserida em um dos Colégios particulares mais tradicionais de Contagem.
+        O INSTITUTO ELIZABETH KALIL possui estrutura fantástica e mais de 50 anos de Excelência de Ensino.
+        A parceria, iniciada em 2023, tem como objetivo ensinar FUTSAL de forma dinâmica e lúdica,
+        proporcionando um ambiente seguro, acolhedor e estimulante para os alunos.`,
 
-            horarios2: `TURNO TARDE DIAS DA SEMANAS: 3ª E 5ª FEIRA HORÁRIO: 17H40 ÀS 18H30 - SUB 08|10|12`,
+        nome2: "DIAS E HORÁRIOS",
+        imagem: "img/img_futsal_kalil.jpeg",
+    },
 
-            horarios3: `TURNO TARDE INFANTIL DIAS DA SEMANA: 3ª E 5ª FEIRA HORÁRIO: 17H00 ÀS 17H40 - SUB 06`,
+    item_6: {
+        nome: "ESCOLA DE FUTSAL IHF",
 
-            descricao: `A Escola de Futsal IHF, está inserida em um dos Colégios da rede particular mais tradicionais de Contagem;
-                        O INSTITUTO HELENA FENANDES possui uma estrutura fantástica, além de ter uma linda história de Excelência de Ensino. 
-                        Iniciamos nossa parceria em 2025, com a proposta de ensinar o FUTSAL de forma dinâmica e lúdica no âmbito escolar. Utilizamos as
-                        dependências do Colégio proporcionando aos alunos um ambiente seguro e acolhedor, propício para o aprendizado e para fazer muitas amizades. `,
-            nome2: "DIAS E HORARIOS",
-            imagem: "img/img_futsal_ihf.jpeg",
+        horarios1Titulo: "TURNO MANHÃ – 2 DIAS DA SEMANA",
+        horarios1Informacoes: "3ª e 6ª FEIRA • 11H30 às 12H20 – SUB 08 | 10 | 12",
 
-        },
-                item_5: {
-            nome: "ESCOLA DE ESPORTES CRESCER",
+        horarios2Titulo: "TURNO TARDE – 2 DIAS DA SEMANA",
+        horarios2Informacoes: "3ª e 5ª FEIRA • 17H40 às 18H30 – SUB 08 | 10 | 12",
 
-            horarios1: `TURNO MANHÃ DIAS DA SEMANA: 3ª E 6ª FEIRA HORÁRIO: 11H30 ÀS 12H20 - SUB 08|10|12`,
+        horarios3Titulo: "TURNO TARDE – INFANTIL",
+        horarios3Informacoes: "3ª e 5ª FEIRA • 17H00 às 17H40 – SUB 06",
 
-            horarios2: `TURNO TARDE DIAS DA SEMANA: 2ª E 4ª FEIRA HORÁRIO 2: 17H40 ÀS 18H40 - SUB 08|10|12`,
+        descricao: `A Escola de Futsal IHF está inserida em um dos Colégios particulares mais tradicionais de Contagem.
+        O INSTITUTO HELENA FERNANDES tem longa história de Excelência em Educação.
+        A parceria, iniciada em 2025, promove o ensino do FUTSAL de forma lúdica e dinâmica,
+        garantindo um ambiente seguro, acolhedor e ideal para o aprendizado e o desenvolvimento dos alunos.`,
 
-            horarios3: `TURNO TARDE INFANTIL DIAS DA SEMANA: 3ª E 5ª FEIRA HORÁRIO: 17H00 ÀS 17H40 - SUB 06 `,
+        nome2: "DIAS E HORÁRIOS",
+        imagem: "img/img_futsal_ihf.jpeg",
+    },
 
-            descricao: `A Escola de Esportes CRESCER, está inserida em um dos Colégios da rede particular mais tradicionais de Contagem;
-                        O COLÉGIO CRESCER CONTAGEM possui uma estrutura fantástica, além de ter uma linda história de Excelência de Ensino. 
-                        Iniciamos nossa parceria em 2025, com a proposta de ensinar o FUTSAL de forma dinâmica e lúdica no âmbito escolar. 
-                        Utilizamos as dependências do Colégio proporcionando aos alunos um ambiente seguro e acolhedor, propício para o aprendizado
-                        e para fazer muitas amizades.`,
-            nome2: "DIAS E HORARIOS",
-            imagem: "img/CRESCER ESPORTES.png",
+    item_5: {
+        nome: "ESCOLA DE ESPORTES CRESCER",
 
-        },
-                item_4: {
-            nome: "ESCOLA DE FUTSAL CONSTRUIR +",
+        horarios1Titulo: "TURNO MANHÃ – 2 DIAS DA SEMANA",
+        horarios1Informacoes: "3ª e 6ª FEIRA • 11H30 às 12H20 – SUB 08 | 10 | 12",
 
-            horarios1: `TURNO TARDE 2 DIAS DA SEMANA: 2ª E 4ª FEIRA HORÁRIO: 18H00 ÀS 18H50 - SUB 12`,
+        horarios2Titulo: "TURNO TARDE – 2 DIAS DA SEMANA",
+        horarios2Informacoes: "2ª e 4ª FEIRA • 17H40 às 18H40 – SUB 08 | 10 | 12",
 
-            horarios2: `TURNO TARDE DIAS DA SEMANA: 2ª E 4ª FEIRA HORÁRIO: 17H10 ÀS 18H00 - SUB 08|10 `,
+        horarios3Titulo: "TURNO TARDE – INFANTIL",
+        horarios3Informacoes: "3ª e 5ª FEIRA • 17H00 às 17H40 – SUB 06",
 
-            horarios3: `TURNO TARDE - INFANTIL DIA DA SEMANA: 6ª FEIRA HORÁRIO 2: 17H40 ÀS 18H30 - SUB 06`,
+        descricao: `A Escola de Esportes Crescer está inserida em um dos Colégios particulares mais tradicionais de Contagem.
+        O COLÉGIO CRESCER CONTAGEM possui uma estrutura fantástica e uma história marcada pela Excelência de Ensino.
+        A parceria, iniciada em 2025, promove o FUTSAL no ambiente escolar de maneira dinâmica e lúdica,
+        garantindo segurança, acolhimento e estímulo ao aprendizado e às amizades.`,
 
-            descricao: `A Escola de Futsal CONSTRUIR+, está inserida em um dos Colégios da rede particular mais tradicionais de Contagem;
-                        O COLÉGIO CONSTRUIR+ possui uma estrutura fantástica, além de ter uma linda história de Excelência de Ensino. 
-                        Iniciamos nossa parceria em 2024, com a proposta de ensinar o FUTSAL de forma dinâmica e lúdica no âmbito escolar. 
-                        Utilizamos as dependências do Colégio proporcionando aos alunos um ambiente seguro e acolhedor, propício para o aprendizado
-                         e para fazer muitas amizades.`,
-            nome2: "DIAS E HORARIOS",
-            imagem: "img/img_futsal_construir.jpeg",
+        nome2: "DIAS E HORÁRIOS",
+        imagem: "img/CRESCER ESPORTES.png",
+    },
 
-        },
-    };
+    item_4: {
+        nome: "ESCOLA DE FUTSAL CONSTRUIR +",
+
+        horarios1Titulo: "TURNO TARDE – 2 DIAS DA SEMANA",
+        horarios1Informacoes: "2ª e 4ª FEIRA • 18H00 às 18H50 – SUB 12",
+
+        horarios2Titulo: "TURNO TARDE – 2 DIAS DA SEMANA",
+        horarios2Informacoes: "2ª e 4ª FEIRA • 17H10 às 18H00 – SUB 08 | 10",
+
+        horarios3Titulo: "TURNO TARDE – INFANTIL",
+        horarios3Informacoes: "6ª FEIRA • 17H40 às 18H30 – SUB 06",
+
+        descricao: `A Escola de Futsal CONSTRUIR+ está inserida em um dos Colégios particulares mais tradicionais de Contagem.
+        O COLÉGIO CONSTRUIR+ possui estrutura fantástica e uma história marcada pela Excelência de Ensino.
+        A parceria, iniciada em 2024, leva aos alunos um FUTSAL dinâmico, lúdico e seguro, utilizando as dependências da instituição
+        para promover um ambiente acolhedor e propício ao aprendizado e às amizades.`,
+
+        nome2: "DIAS E HORÁRIOS",
+        imagem: "img/img_futsal_construir.jpeg",
+    }
+};
+
 
     let infoSection = document.getElementById("info_escola");
     if (!infoSection) {
@@ -139,36 +161,51 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const itens = document.querySelectorAll(".iten_escola");
 
-    itens.forEach(item => {
-        item.addEventListener("click", () => {
-            const dados = escolas[item.id];
+itens.forEach(item => {
+    item.addEventListener("click", () => {
+        const dados = escolas[item.id];
 
-            infoSection.innerHTML = `
-                <div class="info-conteudo">
-                    <div class="info-texto">
-                        <h2>${dados.nome}</h2>
-                        <p>${dados.descricao}</p>
+        infoSection.innerHTML = `
+            <div class="info-conteudo">
+                <div class="info-texto">
+                    <h2>${dados.nome}</h2>
+                    <p>${dados.descricao}</p>
 
-                        <h2>${dados.nome2}</h2>
-                        <p>${dados.horarios1}</p>
-                        <p>${dados.horarios2}</p>
-                    </div>
+                    <h2>${dados.nome2}</h2>
 
-                    <div class="info-imagem" style="background-image: url(${dados.imagem});">
-                        
+                    <div class="grid-horarios">
+                        <div class="bloco-horario">
+                            <h3>${dados.horarios1Titulo}</h3>
+                            <p>${dados.horarios1Informacoes}</p>
+                        </div>
+
+                        <div class="bloco-horario">
+                            <h3>${dados.horarios2Titulo}</h3>
+                            <p>${dados.horarios2Informacoes}</p>
+                        </div>
+
+                        <div class="bloco-horario">
+                            <h3>${dados.horarios3Titulo}</h3>
+                            <p>${dados.horarios3Informacoes}</p>
+                        </div>
+
+                        <div class="bloco-horario bloco-vazio"></div>
                     </div>
                 </div>
-            `;
 
-            infoSection.style.display = "block";
+                <div class="info-imagem" style="background-image: url(${dados.imagem});"></div>
+            </div>
+        `;
 
-            // 🔥 Ativa animação suavemente
-            const bloco = infoSection.querySelector(".info-conteudo");
-            setTimeout(() => bloco.classList.add("ativo"), 20);
+        infoSection.style.display = "block";
 
-            if (window.innerWidth <= 1068) {
-                infoSection.scrollIntoView({ behavior: "smooth", block: "start" });
-            }
-        });
+        const bloco = infoSection.querySelector(".info-conteudo");
+        setTimeout(() => bloco.classList.add("ativo"), 20);
+
+        if (window.innerWidth <= 1068) {
+            infoSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
     });
+});
+
 });

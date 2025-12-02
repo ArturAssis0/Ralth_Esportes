@@ -31,23 +31,22 @@ document.addEventListener("DOMContentLoaded", () => {
         // =======================================================
         item_1: {
             nome: "ESCOLA DE VÔLEI SUPREMO",
-            descricao: `A Escola de Vôlei Supremo está inserida em um dos Colégios da rede particular mais tradicionais de Contagem; 
-O COLÉGIO SUPREMO possui uma estrutura fantástica, além de ter uma linda história de mais de 29 anos de Excelência de Ensino.
+            descricao: `
+A Escola de Vôlei Supremo está inserida em um dos Colégios da rede particular mais tradicionais de Contagem.
+O COLÉGIO SUPREMO possui uma estrutura fantástica e uma linda história de mais de 29 anos de Excelência de Ensino.
 
-Iniciamos nossa parceria em 2019, com a proposta de ensinar o VÔLEI de forma dinâmica e lúdica no âmbito escolar. 
-Utilizamos as dependências do Colégio proporcionando aos alunos um ambiente seguro e acolhedor, propício para o aprendizado e para fazer muitas amizades.
+A parceria, iniciada em 2019, tem como objetivo ensinar o VÔLEI de forma dinâmica e lúdica no ambiente escolar,
+proporcionando aos alunos um espaço seguro, acolhedor e ideal para o aprendizado e novas amizades.
             `,
+
             nome2: "DIAS E HORÁRIOS",
-            horarios1: `
-TURNO MANHÃ  
-DIA DA SEMANA: 5ª FEIRA  
-HORÁRIO: 11H30 ÀS 12H20 - SUB 11 E 13
-            `,
-            horarios2: `
-TURNO TARDE  
-DIAS DA SEMANA: 4ª E 6ª FEIRA  
-HORÁRIO: 17H30 ÀS 18H20 - SUB 08 | 10 | 12
-            `,
+
+            horarios1Titulo: "TURNO MANHÃ – 1 DIA NA SEMANA",
+            horarios1Informacoes: "5ª FEIRA • 11H30 ÀS 12H20 – SUB 11 | 13",
+
+            horarios2Titulo: "TURNO TARDE – 2 DIAS NA SEMANA",
+            horarios2Informacoes: "4ª E 6ª FEIRA • 17H30 ÀS 18H20 – SUB 08 | 10 | 12",
+
             imagem: "img/img_volei_supremo.jpeg",
         },
 
@@ -57,23 +56,21 @@ HORÁRIO: 17H30 ÀS 18H20 - SUB 08 | 10 | 12
         item_2: {
             nome: "ESCOLA DE VÔLEI KALIL",
             descricao: `
-A Escola de Vôlei Elizabeth Kalil está inserida em um dos Colégios da rede particular mais tradicionais de Contagem; 
-O INSTITUTO ELIZABETH KALIL possui uma estrutura fantástica, além de ter uma linda história de mais de 50 anos de Excelência de Ensino.
+A Escola de Vôlei Elizabeth Kalil está inserida em um dos Colégios particulares mais tradicionais de Contagem.
+O INSTITUTO ELIZABETH KALIL possui uma excelente estrutura e mais de 50 anos de história dedicada à educação.
 
-Iniciamos nossa parceria em 2023, com a proposta de ensinar o VÔLEI de forma dinâmica e lúdica no âmbito escolar. 
-Utilizamos as dependências do Colégio proporcionando aos alunos um ambiente seguro e acolhedor, propício para o aprendizado e para fazer muitas amizades.
+A parceria, iniciada em 2023, tem como objetivo ensinar o VÔLEI de forma dinâmica e lúdica,
+sempre garantindo segurança, acolhimento e estímulo ao aprendizado.
             `,
+
             nome2: "DIAS E HORÁRIOS",
-            horarios1: `
-TURNO MANHÃ  
-DIAS DA SEMANA: 5ª FEIRA  
-HORÁRIO: 11H40 ÀS 12H30 - SUB 11 E 13
-            `,
-            horarios2: `
-TURNO TARDE  
-DIAS DA SEMANA: 2ª E 4ª FEIRA  
-HORÁRIO: 17H30 ÀS 18H20 - SUB 08 | 10 | 12
-            `,
+
+            horarios1Titulo: "TURNO MANHÃ – 1 DIA NA SEMANA",
+            horarios1Informacoes: "5ª FEIRA • 11H40 ÀS 12H30 – SUB 11 | 13",
+
+            horarios2Titulo: "TURNO TARDE – 2 DIAS NA SEMANA",
+            horarios2Informacoes: "2ª E 4ª FEIRA • 17H30 ÀS 18H20 – SUB 08 | 10 | 12",
+
             imagem: "img/img_volei_kalil.jpeg",
         },
 
@@ -83,19 +80,21 @@ HORÁRIO: 17H30 ÀS 18H20 - SUB 08 | 10 | 12
         item_3: {
             nome: "ESCOLA DE VÔLEI CONSTRUIR +",
             descricao: `
-A Escola de Vôlei CONSTRUIR + está inserida em um dos Colégios da rede particular mais tradicionais de Contagem; 
-O COLÉGIO CONSTRUIR MAIS possui uma estrutura fantástica, além de ter uma linda história de Excelência de Ensino.
+A Escola de Vôlei Construir+ está inserida em um dos Colégios da rede particular mais tradicionais de Contagem.
+O COLÉGIO CONSTRUIR+ possui uma excelente estrutura e uma história marcada pela Excelência de Ensino.
 
-Iniciamos nossa parceria em 2024, com a proposta de ensinar o VÔLEI de forma dinâmica e lúdica no âmbito escolar. 
-Utilizamos as dependências do Colégio proporcionando aos alunos um ambiente seguro e acolhedor, propício para o aprendizado e para fazer muitas amizades.
+A parceria, iniciada em 2024, tem como objetivo ensinar VÔLEI de forma dinâmica e divertida,
+garantindo aos alunos um ambiente seguro, acolhedor e inspirador.
             `,
+
             nome2: "DIAS E HORÁRIOS",
-            horarios1: ``,
-            horarios2: `
-TURNO TARDE  
-DIAS DA SEMANA: 3ª E 5ª FEIRA  
-HORÁRIO: 17H40 ÀS 18H30 - SUB 11 E 13
-            `,
+
+            horarios1Titulo: "TURNO MANHÃ – (SEM TURMAS)",
+            horarios1Informacoes: "Nenhuma turma disponível no período da manhã.",
+
+            horarios2Titulo: "TURNO TARDE – 2 DIAS NA SEMANA",
+            horarios2Informacoes: "3ª E 5ª FEIRA • 17H40 ÀS 18H30 – SUB 11 | 13",
+
             imagem: "img/img_volei_construir.jpeg",
         },
 
@@ -105,23 +104,21 @@ HORÁRIO: 17H40 ÀS 18H30 - SUB 11 E 13
         item_4: {
             nome: "ESCOLA DE ESPORTES CRESCER",
             descricao: `
-A Escola de Esportes CRESCER está inserida em um dos Colégios da rede particular mais tradicionais de Contagem; 
-O COLÉGIO CRESCER CONTAGEM possui uma estrutura fantástica, além de ter uma linda história de Excelência de Ensino.
+A Escola de Esportes Crescer está inserida em um dos Colégios particulares mais tradicionais de Contagem.
+O COLÉGIO CRESCER CONTAGEM possui excelente estrutura e uma reconhecida história de Excelência de Ensino.
 
-Iniciamos nossa parceria em 2025, com a proposta de ensinar o VÔLEI de forma dinâmica e lúdica no âmbito escolar. 
-Utilizamos as dependências do Colégio proporcionando aos alunos um ambiente seguro e acolhedor, propício para o aprendizado e para fazer muitas amizades.
+A parceria, iniciada em 2025, promove o ensino do VÔLEI de forma lúdica, dinâmica e segura,
+proporcionando aos alunos um ambiente acolhedor e ideal para o aprendizado.
             `,
+
             nome2: "DIAS E HORÁRIOS",
-            horarios1: `
-TURNO MANHÃ  
-DIAS DA SEMANA: 2ª E 4ª FEIRA  
-HORÁRIO: 11H40 ÀS 12H30 - SUB 11 E 13
-            `,
-            horarios2: `
-TURNO TARDE  
-DIAS DA SEMANA: 3ª E 5ª FEIRA  
-HORÁRIO: 17H40 ÀS 18H30 - SUB 08 | 10 | 12
-            `,
+
+            horarios1Titulo: "TURNO MANHÃ – 2 DIAS NA SEMANA",
+            horarios1Informacoes: "2ª E 4ª FEIRA • 11H40 ÀS 12H30 – SUB 11 | 13",
+
+            horarios2Titulo: "TURNO TARDE – 2 DIAS NA SEMANA",
+            horarios2Informacoes: "3ª E 5ª FEIRA • 17H40 ÀS 18H30 – SUB 08 | 10 | 12",
+
             imagem: "img/img_volei_crescer.jpeg",
         },
     };
@@ -152,13 +149,15 @@ HORÁRIO: 17H40 ÀS 18H30 - SUB 08 | 10 | 12
                         <p>${dados.descricao}</p>
 
                         <h2>${dados.nome2}</h2>
-                        <p>${dados.horarios1}</p>
-                        <p>${dados.horarios2}</p>
+
+                        <h3>${dados.horarios1Titulo}</h3>
+                        <p>${dados.horarios1Informacoes}</p>
+
+                        <h3>${dados.horarios2Titulo}</h3>
+                        <p>${dados.horarios2Informacoes}</p>
                     </div>
 
-                    <div class="info-imagem" style="background-image: url(${dados.imagem});">
-                        
-                    </div>
+                    <div class="info-imagem" style="background-image: url(${dados.imagem});"></div>
                 </div>
             `;
 
