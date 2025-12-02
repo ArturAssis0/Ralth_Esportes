@@ -150,9 +150,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 `;
             } else {
 
-                if(item.id === "item_2"){
+                if (item.id === "item_2") {
 
-                html = `
+                    html = `
 <div class="info-conteudo">
     <div class="info-texto">
 
@@ -194,9 +194,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     </div>
 </div>
-                `}else{
+                `} else {
 
-                //FUTSAL
+                    //FUTSAL
 
                     html = `
 <div class="info-conteudo">
@@ -239,6 +239,8 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
 
     </div>
+            <div class="info-imagem-ralth" style="background-image: url(img/img-ralth-futsal.jpeg)">
+        </div>
 </div>
                 `
 

@@ -73,6 +73,7 @@ hr {
 /* container geral */
 .info-conteudo {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
@@ -142,8 +143,18 @@ hr {
     background-size: cover;
 }
 
+.info-imagem-ralth {
+    width: 38vw;
+    height: 38vh;
+    border: 2px solid rgb(31, 84, 124);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 /* ============================================================
-   MOBILE
+   Desktop
    ============================================================ */
 @media (max-width: 1068px) {
 
